@@ -3,9 +3,8 @@
   z-index: 1;
   width: calc(100% + 200px);
   height: 1080px;
-  top: 377.6px;
-  left: -100px;
-  object-fit: contain;
+  top: 325px;
+  right: -100px;
 }
 
 .bg-shape-big {
@@ -19,7 +18,7 @@
   width: 572.03px;
   height: 608px;
   right: -25%;
-  top: -100px;
+  top: -50px;
 }
 
 .avatar {
@@ -84,8 +83,6 @@
   > p {
     width: 152px;
     height: 63px;
-    gap: 0px;
-    opacity: 0px;
 
     font-size: 64px;
     font-weight: 400;

@@ -33,4 +33,19 @@ app-above-the-fold {
 app-about-me {
   position: relative;
   z-index: 2;
+
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+
+  margin: 10vh 0;
+}
+
+app-my-skills {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  justify-content: space-between;
 }
