@@ -48,10 +48,16 @@
   }
 }
 
-app-projects-right {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.p-projects {
+  app-projects {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-  margin-top: 116px;
+    margin-top: 116px;
+  }
+
+  > app-projects:nth-child(2) {
+    flex-direction: row-reverse;
+  }
 }

@@ -10,4 +10,13 @@
   </p>
 </div>
 
-<app-projects-right></app-projects-right>
+<div class="p-projects">
+  <app-projects
+    *ngFor="let item of projectsData.title; let i = index"
+    [title]="projectsData.title[i]"
+    [skills]="projectsData.skills[i]"
+    [description]="projectsData.description[i]"
+    [image]="projectsData.images[i]"
+  >
+  </app-projects>
+</div>

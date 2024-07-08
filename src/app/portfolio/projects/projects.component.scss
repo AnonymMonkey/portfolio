@@ -4,7 +4,7 @@ img {
   object-fit: contain;
 }
 
-.project-right-rightside {
+.project-rightside {
   display: flex;
   flex-direction: column;
 
@@ -22,20 +22,27 @@ img {
     color: #4b47ff;
   }
 
-  p:first-child {
-    font-size: 23px;
-    font-weight: 400;
-    text-align: left;
+  > .project-rightside-description {
+    display: flex;
+    flex-direction: column;
 
-    color: #00bee8;
+    gap: 15px;
+
+    p:first-child {
+      font-size: 23px;
+      font-weight: 400;
+      text-align: left;
+
+      color: #00bee8;
+    }
+
+    p:nth-child(2) {
+      font-size: 16px;
+      font-weight: 400;
+    }
   }
 
-  p:nth-child(2) {
-    font-size: 16px;
-    font-weight: 400;
-  }
-
-  .project-right-rightside-buttons {
+  .project-rightside-buttons {
     display: flex;
     justify-content: space-between;
 
@@ -66,6 +73,18 @@ img {
 
       font-size: 23px;
       font-weight: 400;
+    }
+  }
+
+  &.align-end {
+    align-items: flex-end;
+
+    > .project-rightside-description {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+
+      text-align: end;
     }
   }
 }
