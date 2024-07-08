@@ -1,0 +1,71 @@
+img {
+  height: 450px;
+  flex: 1;
+  object-fit: contain;
+}
+
+.project-right-rightside {
+  display: flex;
+  flex-direction: column;
+
+  width: 513px;
+
+  gap: 35px;
+
+  color: white;
+
+  h3 {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: left;
+
+    color: #4b47ff;
+  }
+
+  p:first-child {
+    font-size: 23px;
+    font-weight: 400;
+    text-align: left;
+
+    color: #00bee8;
+  }
+
+  p:nth-child(2) {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .project-right-rightside-buttons {
+    display: flex;
+    justify-content: space-between;
+
+    width: 375px;
+    height: 65.36px;
+    gap: 86px;
+
+    > button:first-child {
+      padding: 15px 30px 15px 30px;
+      gap: 10px;
+      border-radius: 10px;
+
+      background-color: #4b47ff;
+      color: white;
+
+      font-size: 23px;
+      font-weight: 400;
+    }
+
+    > button:last-child {
+      padding: 15px 30px 15px 30px;
+      gap: 10px;
+      border-radius: 10px;
+      border: 1px solid #00bee8;
+
+      background-color: transparent;
+      color: white;
+
+      font-size: 23px;
+      font-weight: 400;
+    }
+  }
+}

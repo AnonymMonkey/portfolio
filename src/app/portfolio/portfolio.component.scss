@@ -1,0 +1,57 @@
+.p-start {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  right: -290px;
+
+  gap: 35px;
+
+  .p-headline {
+    display: flex;
+    align-items: center;
+
+    gap: 36px;
+
+    .p-headline-cutline-small {
+      width: 109px;
+      height: 4px;
+      background-color: #4b47ff;
+    }
+
+    h2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 389px;
+      height: 108px;
+
+      font-size: 90px;
+      font-weight: 700;
+      text-align: center;
+
+      color: white;
+    }
+
+    .p-headline-cutline-big {
+      width: 484px;
+      height: 4px;
+      background-color: #4b47ff;
+    }
+  }
+
+  p {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+app-projects-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 116px;
+}
