@@ -1,32 +1,3 @@
-.slide {
-  position: absolute;
-  z-index: 1;
-  width: calc(100% + 200px);
-  height: 1080px;
-  top: 325px;
-  right: -100px;
-}
-
-.bg-shape-big {
-  position: absolute;
-  left: -15%;
-}
-
-.bg-shape-small {
-  position: absolute;
-
-  width: 572.03px;
-  height: 608px;
-  right: -25%;
-  top: -50px;
-}
-
-.avatar {
-  position: relative;
-  z-index: 1;
-  height: 705px;
-}
-
 .atf-right {
   position: absolute;
 
@@ -67,9 +38,7 @@
     cursor: pointer;
 
     &:hover {
-      width: 185px;
-      height: 68px;
-      padding: 20px 40px 20px 40px;
+      scale: 1.1;
 
       background: #4b47ff;
     }
@@ -79,6 +48,7 @@
 .atf-text {
   display: flex;
   align-items: center;
+  justify-content: center;
 
   > p {
     width: 152px;
@@ -130,7 +100,7 @@
 
 .atf-info {
   position: absolute;
-  z-index: 2;
+  z-index: 5;
 
   left: -100px;
   right: 0px;
@@ -167,8 +137,7 @@
       cursor: pointer;
 
       &:hover {
-        width: 41px;
-        height: 40px;
+        scale: 1.3;
       }
     }
 

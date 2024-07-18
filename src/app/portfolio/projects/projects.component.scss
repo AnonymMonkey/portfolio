@@ -60,6 +60,14 @@ img {
 
       font-size: 23px;
       font-weight: 400;
+
+      transition: 100ms;
+
+      cursor: pointer;
+
+      &:hover {
+        background-color: #00bee8;
+      }
     }
 
     > button:last-child {
@@ -73,6 +81,14 @@ img {
 
       font-size: 23px;
       font-weight: 400;
+
+      transition: 100ms;
+
+      cursor: pointer;
+
+      &:hover {
+        background-color: #00bee8;
+      }
     }
   }
 

@@ -15,12 +15,24 @@
     </p>
   </div>
   <form>
-    <input type="text" placeholder="Your name" />
-    <input type="text" placeholder="Your email" />
-    <textarea name="" id="" placeholder="Your message"></textarea>
+    <div class="normal-input">
+      <input type="text" placeholder="Your name" />
+      <label class="d-none" for="name">Your name is required</label>
+    </div>
+    <div class="normal-input">
+      <input type="text" placeholder="Your email" />
+      <label class="d-none" for="email">Your email is required</label>
+    </div>
+    <div class="normal-input">
+      <div class="textarea-with-resize">
+        <textarea name="" id="" placeholder="Your message"></textarea>
+        <img src="assets/img/icons/icons-sub/resize.svg" alt="" />
+      </div>
+      <label class="d-none" for="message">Your message is empty</label>
+    </div>
     <div class="contact-form-privacy">
       <div class="contact-form-checkbox">
-        <input type="checkbox" name="" id="privacy" />
+        <input type="checkbox" name="privacy" id="privacy" />
         <label for="privacy"></label>
       </div>
       <p>
@@ -29,7 +41,7 @@
         and agree to the processing of my data as outlined.
       </p>
     </div>
-    <button disabled>Send message :)</button>
+    <button type="submit" disabled>Send message :)</button>
   </form>
 </div>
 <a class="arrow-up" href="#">
