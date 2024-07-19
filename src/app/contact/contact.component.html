@@ -16,17 +16,40 @@
   </div>
   <form>
     <div class="normal-input">
-      <input type="text" placeholder="Your name" />
+      <div class="normal-input-with-img">
+        <input type="text" placeholder="Your name" />
+        <img
+          class="input-icon d-none"
+          src="assets/img/icons/icons-sub/warning.svg"
+          alt=""
+        />
+      </div>
       <label class="d-none" for="name">Your name is required</label>
     </div>
     <div class="normal-input">
-      <input type="text" placeholder="Your email" />
+      <div class="normal-input-with-img">
+        <input type="text" placeholder="Your email" />
+        <img
+          class="input-icon d-none"
+          src="assets/img/icons/icons-sub/warning.svg"
+          alt=""
+        />
+      </div>
       <label class="d-none" for="email">Your email is required</label>
     </div>
     <div class="normal-input">
-      <div class="textarea-with-resize">
+      <div class="textarea-with-resize normal-input-with-img">
         <textarea name="" id="" placeholder="Your message"></textarea>
-        <img src="assets/img/icons/icons-sub/resize.svg" alt="" />
+        <img
+          class="input-icon d-none"
+          src="assets/img/icons/icons-sub/warning.svg"
+          alt=""
+        />
+        <img
+          class="textarea-resize"
+          src="assets/img/icons/icons-sub/resize.svg"
+          alt=""
+        />
       </div>
       <label class="d-none" for="message">Your message is empty</label>
     </div>

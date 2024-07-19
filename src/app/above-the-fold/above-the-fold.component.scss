@@ -15,7 +15,7 @@
   height: auto;
   max-height: 172px;
 
-  button {
+  a {
     position: absolute;
     bottom: -102px;
 
@@ -25,6 +25,11 @@
     padding: 15px 30px 15px 30px;
     gap: 10px;
     border-radius: 10px;
+    border-style: none;
+
+    text-decoration: none;
+
+    line-height: 27.6px;
 
     color: white;
     background-color: #00bee8;
