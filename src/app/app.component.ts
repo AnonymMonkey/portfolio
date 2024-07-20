@@ -8,7 +8,6 @@ import { MySkillsComponent } from './my-skills/my-skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
-import { BackgroundObjectsComponent } from './background-objects/background-objects.component';
 
 @Component({
   selector: 'app-root',
@@ -23,7 +22,6 @@ import { BackgroundObjectsComponent } from './background-objects/background-obje
     PortfolioComponent,
     ContactComponent,
     FooterComponent,
-    BackgroundObjectsComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

@@ -92,6 +92,8 @@
     line-height: 27.6px;
     color: white;
 
+    text-decoration: none;
+
     transition: 100ms;
 
     cursor: pointer;
@@ -102,4 +104,14 @@
       background: #4b47ff;
     }
   }
+}
+
+.bg-shape-my-skills {
+  position: absolute;
+  bottom: 0px;
+  left: -350px;
+  z-index: -1;
+  width: 430.59px;
+  rotate: 180deg;
+  transform: scaleX(-1);
 }

@@ -282,3 +282,11 @@
   justify-content: end;
   margin-top: 50px;
 }
+
+.bg-shape-end {
+  position: absolute;
+  bottom: -50%;
+  left: -250px;
+  width: 750px;
+  rotate: 180deg;
+}

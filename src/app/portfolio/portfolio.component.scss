@@ -61,3 +61,20 @@
     flex-direction: row-reverse;
   }
 }
+
+.bg-shape-portfolio-mid {
+  position: absolute;
+  left: -150px;
+  top: 38%;
+  z-index: -1;
+  width: 636px;
+}
+
+.bg-shape-portfolio-end {
+  position: absolute;
+  bottom: 0;
+  right: -250px;
+  width: 508px;
+  rotate: 75deg;
+  z-index: -1;
+}
