@@ -1,3 +1,15 @@
+.about-me {
+  position: relative;
+  z-index: 3;
+
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+
+  padding: 160px 0;
+}
+
 .a-me-left {
   color: white;
   width: 470px;

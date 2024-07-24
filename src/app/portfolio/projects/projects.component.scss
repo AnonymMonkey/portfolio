@@ -1,3 +1,11 @@
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 116px;
+}
+
 img {
   height: 450px;
   flex: 1;

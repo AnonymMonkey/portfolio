@@ -1,33 +1,35 @@
-<div class="p-start">
-  <div class="p-headline">
-    <div class="p-headline-cutline-small"></div>
-    <h2>Portfolio</h2>
-    <div class="p-headline-cutline-big"></div>
+<div class="portfolio">
+  <div class="p-start">
+    <div class="p-headline">
+      <div class="p-headline-cutline-small"></div>
+      <h2>Portfolio</h2>
+      <div class="p-headline-cutline-big"></div>
+    </div>
+    <p>
+      Explore a selection of my work here - Interact with projects to see my
+      skills in action.
+    </p>
   </div>
-  <p>
-    Explore a selection of my work here - Interact with projects to see my
-    skills in action.
-  </p>
-</div>
 
-<div class="p-projects">
-  <app-projects
-    *ngFor="let item of projectsData.title; let i = index"
-    [title]="projectsData.title[i]"
-    [skills]="projectsData.skills[i]"
-    [description]="projectsData.description[i]"
-    [image]="projectsData.images[i]"
-  >
-  </app-projects>
-</div>
+  <div class="p-projects">
+    <app-projects
+      *ngFor="let item of projectsData.title; let i = index"
+      [title]="projectsData.title[i]"
+      [skills]="projectsData.skills[i]"
+      [description]="projectsData.description[i]"
+      [image]="projectsData.images[i]"
+    >
+    </app-projects>
+  </div>
 
-<img
-  class="bg-shape-portfolio-mid"
-  src="assets/img/build-objects/vector5.png"
-  alt=""
-/>
-<img
-  class="bg-shape-portfolio-end"
-  src="assets/img/build-objects/green-shadow.png"
-  alt=""
-/>
+  <img
+    class="bg-shape-portfolio-mid"
+    src="assets/img/build-objects/vector5.png"
+    alt=""
+  />
+  <img
+    class="bg-shape-portfolio-end"
+    src="assets/img/build-objects/green-shadow.png"
+    alt=""
+  />
+</div>

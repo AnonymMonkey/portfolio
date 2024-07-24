@@ -1,3 +1,15 @@
+.landing-page {
+  position: relative;
+  z-index: 3;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 100vh;
+}
+
 .avatar-with-bg {
   position: absolute;
   left: -100px;
