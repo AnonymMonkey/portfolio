@@ -6,23 +6,19 @@
   box-sizing: border-box;
 }
 
-body {
+html {
   display: flex;
   justify-content: center;
+}
 
+body {
   background-color: #141d2f;
   font-family: "Poppins", "Franklin Gothic Medium", "Arial Narrow", Arial,
     sans-serif;
-}
 
-app-root {
   position: relative;
 
-  width: 100%;
-  max-width: 1440px;
-  padding: 0 100px;
-
-  overflow: hidden;
+  width: clamp(300px, 100%, 1440px);
 
   box-shadow: 0px 0px 32px #4b47ff;
 }

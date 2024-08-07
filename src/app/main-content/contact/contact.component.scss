@@ -2,6 +2,15 @@
   display: none;
 }
 
+.contact {
+  position: relative;
+  z-index: 1;
+
+  color: white;
+
+  padding-bottom: 160px;
+}
+
 .contact-headline {
   display: flex;
   align-items: center;
