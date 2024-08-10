@@ -2,16 +2,12 @@
   position: relative;
 
   width: 100%;
-
-  padding: 160px 0;
 }
 
 .p-projects {
   app-projects:nth-child(2) {
     background-color: yellow;
     .projects {
-      display: flex;
-      flex-direction: row-reverse;
     }
   }
 }

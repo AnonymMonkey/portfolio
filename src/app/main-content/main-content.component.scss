@@ -1,9 +1,22 @@
 .page {
   position: relative;
 
-  padding: 0 100px;
-  overflow: hidden;
-
   display: flex;
   flex-direction: column;
+}
+
+#landing,
+#about,
+#skills,
+#portfolio,
+#contact {
+  padding: 0 100px;
+  overflow: hidden;
+}
+
+#about,
+#skills,
+#portfolio,
+#contact {
+  padding: 100px 100px;
 }
