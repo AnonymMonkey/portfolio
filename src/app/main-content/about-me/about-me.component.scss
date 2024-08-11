@@ -70,6 +70,7 @@
     border-radius: 50%;
     object-fit: cover;
     object-position: 0 50px;
+    background-color: #141d2f;
   }
 
   > div {
@@ -84,7 +85,8 @@
   position: absolute;
   width: 572.03px;
   height: 608px;
-  right: -300px;
+  right: -350px;
   top: 0;
-  z-index: 2;
+  z-index: -1;
+  rotate: 27deg;
 }

@@ -5,8 +5,17 @@
 
   margin-top: 116px;
 
-  &:nth-child(2) {
-    background-color: green;
+  &.align-end {
+    flex-direction: row-reverse;
+
+    > .project-rightside {
+      align-items: end;
+
+      > .project-rightside-description {
+        text-align: end;
+        align-items: end;
+      }
+    }
   }
 }
 
@@ -102,18 +111,6 @@ img {
       &:hover {
         background-color: #00bee8;
       }
-    }
-  }
-
-  &.align-end {
-    align-items: flex-end;
-
-    > .project-rightside-description {
-      display: flex;
-      flex-direction: column;
-      align-items: end;
-
-      text-align: end;
     }
   }
 }

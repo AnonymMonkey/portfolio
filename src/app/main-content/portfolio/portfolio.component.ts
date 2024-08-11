@@ -44,8 +44,7 @@ export class PortfolioComponent implements AfterViewInit {
   ngAfterViewInit() {
     let count = 1;
     this.projects.forEach((project: ElementRef) => {
-      const projectRightside =
-        project.nativeElement.querySelector('.project-rightside');
+      const projectRightside = project.nativeElement.querySelector('.projects');
       if (count % 2 === 0) {
         this.renderer.addClass(projectRightside, 'align-end');
       }

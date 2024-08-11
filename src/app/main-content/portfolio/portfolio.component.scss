@@ -4,14 +4,6 @@
   width: 100%;
 }
 
-.p-projects {
-  app-projects:nth-child(2) {
-    background-color: yellow;
-    .projects {
-    }
-  }
-}
-
 .p-start {
   display: flex;
   flex-direction: column;
@@ -65,14 +57,14 @@
 .bg-shape-portfolio-mid {
   position: absolute;
   left: -150px;
-  top: 38%;
+  top: 36%;
   z-index: -1;
   width: 636px;
 }
 
 .bg-shape-portfolio-end {
   position: absolute;
-  bottom: 0;
+  bottom: -100px;
   right: -250px;
   width: 508px;
   rotate: 75deg;
