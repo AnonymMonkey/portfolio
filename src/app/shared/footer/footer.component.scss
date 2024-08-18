@@ -1,20 +1,27 @@
-.footer {
+@import "./../../../styles.scss";
+
+.long-bg {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: $color-bg;
+}
+
+footer {
   position: relative;
 
   bottom: 0;
-  left: 0;
   z-index: 1;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   height: 20vh;
-
-  padding: 0 100px;
+  width: $width;
+  padding: $padding;
 
   color: white;
-  background-color: #141d2f;
+  background-color: transparent;
 }
 
 .footer-cutline {

@@ -1,16 +1,25 @@
-header {
+@import "./../../../styles.scss";
+
+.long-bg {
+  background-color: $color-bg;
+  width: 100%;
   position: fixed;
   z-index: 10;
   top: 0;
-  width: 100%;
-  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  width: $width;
+  padding: $padding;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 110px;
-  padding: 0 100px;
-  background: #141d2f;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+  background: $color-bg;
 
   .home-link {
     display: flex;

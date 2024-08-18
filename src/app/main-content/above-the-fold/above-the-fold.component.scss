@@ -1,20 +1,27 @@
+@import "./../../../styles.scss";
+
 .landing-page {
   position: relative;
-  z-index: 3;
+  z-index: 1;
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 
   width: 100%;
   height: 100vh;
 }
 
 .atf-main-content {
-  width: 100%;
+  width: $width;
+  padding: $padding;
+
+  position: relative;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 0;
 
   .avatar-with-bg {
     position: relative;
@@ -28,18 +35,17 @@
     height: 50vw;
     width: 50vw;
 
-    padding: 0 100px;
-
     .avatar {
       position: absolute;
       z-index: 1;
+      left: 100px;
 
       height: 100%;
     }
 
     .avatar-bg {
       position: absolute;
-      height: 100%;
+      width: 100%;
     }
   }
 
@@ -49,7 +55,7 @@
     align-items: center;
 
     position: absolute;
-    right: 0;
+    right: 100px;
     z-index: 2;
 
     .atf-text {
@@ -66,7 +72,7 @@
 
         text-wrap: nowrap;
 
-        color: #ffffff;
+        color: $color-white;
 
         rotate: -90deg;
       }
@@ -82,7 +88,7 @@
 
           text-wrap: nowrap;
 
-          color: #ffffff;
+          color: $color-white;
         }
 
         > p:nth-child(2) {
@@ -93,7 +99,7 @@
           line-height: 69.6px;
           text-align: left;
 
-          color: #4b47ff;
+          color: $color-darkblue;
         }
       }
     }
@@ -112,8 +118,8 @@
 
       line-height: 27.6px;
 
-      color: white;
-      background-color: #00bee8;
+      color: $color-white;
+      background-color: $color-lightblue;
 
       box-shadow: 4px 4px 4px 0px #00000040;
 
@@ -126,7 +132,7 @@
       &:hover {
         scale: 1.1;
 
-        background: #4b47ff;
+        background: $color-darkblue;
       }
     }
   }
@@ -134,13 +140,13 @@
 
 .atf-info {
   position: absolute;
-  z-index: 5;
+  z-index: 3;
 
-  left: -100px;
-  right: 0px;
   bottom: 50px;
 
+  width: clamp(300px, 100%, 1440px);
   height: 40px;
+
   display: flex;
   justify-content: space-between;
 
@@ -157,7 +163,7 @@
     .cutline {
       min-width: 100px;
       height: 4px;
-      background-color: #4b47ff;
+      background-color: $color-darkblue;
     }
 
     img {
@@ -175,7 +181,7 @@
 
     a {
       text-decoration: none;
-      color: white;
+      color: $color-white;
     }
   }
 
@@ -183,7 +189,7 @@
     position: absolute;
     z-index: 3;
 
-    right: 0;
+    right: 100px;
     bottom: 0;
 
     display: flex;
@@ -198,7 +204,7 @@
       position: relative;
       top: 25%;
 
-      color: white;
+      color: $color-white;
       width: 134px;
       height: 28px;
       rotate: 90deg;
@@ -218,9 +224,10 @@
 
 .slide {
   position: absolute;
-  z-index: 1;
-  width: calc(100% + 200px);
-  left: -100px;
-  height: 50vh;
+  z-index: 2;
+  width: 100%;
+  left: 0;
+  right: 0;
+  height: 25vh;
   bottom: 0;
 }

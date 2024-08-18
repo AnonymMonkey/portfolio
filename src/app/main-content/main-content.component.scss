@@ -1,22 +1,27 @@
-.page {
-  position: relative;
+@import "./../../styles.scss";
 
+app-header,
+app-above-the-fold,
+app-about-me,
+app-my-skills,
+app-portfolio,
+app-contact {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+app-above-the-fold {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.main-c {
+  width: 100%;
   display: flex;
   flex-direction: column;
-}
-
-#landing,
-#about,
-#skills,
-#portfolio,
-#contact {
-  padding: 0 100px;
-  overflow: hidden;
-}
-
-#about,
-#skills,
-#portfolio,
-#contact {
-  padding: 100px 100px;
+  align-items: center;
+  gap: 160px;
+  margin-top: -160px;
 }

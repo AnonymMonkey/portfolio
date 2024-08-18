@@ -1,3 +1,5 @@
+@import "./../../../styles.scss";
+
 .d-none {
   display: none;
 }
@@ -8,6 +10,8 @@
 
   color: white;
 
+  width: $width;
+
   padding-bottom: 160px;
 }
 
@@ -15,9 +19,9 @@
   display: flex;
   align-items: center;
   position: relative;
-  left: -100px;
   gap: 50px;
   margin-bottom: 85px;
+  padding-right: 100px;
 
   div {
     width: 50px;
@@ -34,6 +38,7 @@
 .contact-content {
   display: flex;
   justify-content: space-between;
+  padding: $padding;
 
   .contact-description {
     display: flex;
@@ -258,11 +263,12 @@
   display: flex;
   justify-content: end;
   margin-top: 50px;
+  padding: $padding;
 }
 
 .bg-shape-end {
   position: absolute;
-  bottom: -50%;
+  bottom: -200px;
   left: -250px;
   width: 750px;
   rotate: 180deg;

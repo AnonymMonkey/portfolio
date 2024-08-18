@@ -1,7 +1,10 @@
+@import "./../../../styles.scss";
+
 .portfolio {
   position: relative;
 
-  width: 100%;
+  width: $width;
+  padding: $padding;
 }
 
 .p-start {
