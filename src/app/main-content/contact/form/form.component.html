@@ -1,0 +1,66 @@
+<form>
+  <div class="normal-input">
+    <div class="normal-input-with-img">
+      <input type="text" id="name" placeholder="Your name" />
+      <label for="name">Your name is required</label>
+      <img
+        class="input-icon"
+        src="assets/img/icons/icons-sub/warning.svg"
+        alt=""
+      />
+    </div>
+  </div>
+  <div class="normal-input">
+    <div class="normal-input-with-img">
+      <input type="text" id="email" placeholder="Your email" />
+      <label for="email">Your email is required</label>
+      <img
+        class="input-icon"
+        src="assets/img/icons/icons-sub/warning.svg"
+        alt=""
+      />
+    </div>
+  </div>
+  <div class="normal-input">
+    <div class="textarea-with-resize normal-input-with-img">
+      <textarea id="message" placeholder="Your message"></textarea>
+      <label for="message">Your message is empty</label>
+      <img
+        class="input-icon"
+        src="assets/img/icons/icons-sub/warning.svg"
+        alt=""
+      />
+      <img
+        class="textarea-resize"
+        src="assets/img/icons/icons-sub/resize.svg"
+        alt=""
+      />
+    </div>
+  </div>
+  <div class="contact-form-privacy">
+    <div class="checkbox-wrapper">
+      <label class="checkbox">
+        <input class="checkbox__trigger visuallyhidden" type="checkbox" />
+        <span class="checkbox__symbol">
+          <svg
+            aria-hidden="true"
+            class="icon-checkbox"
+            width="28px"
+            height="28px"
+            viewBox="0 0 28 28"
+            version="1"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M4 14l8 7L24 7"></path>
+          </svg>
+        </span>
+        <p class="checkbox__textwrapper">
+          I've read the
+          <a href="">privacy policy</a>
+          and agree to the processing of my data as outlined.
+        </p>
+      </label>
+    </div>
+  </div>
+  <button type="submit" disabled>Send message :)</button>
+</form>
