@@ -1,34 +1,68 @@
-<form>
+<form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+  <!-- Name Input -->
   <div class="normal-input">
     <div class="normal-input-with-img">
-      <input type="text" id="name" placeholder="Your name" />
-      <label for="name">Your name is required</label>
+      <label for="name">Your name</label>
+      <input
+        #name="ngModel"
+        [(ngModel)]="contactData.name"
+        name="name"
+        id="name"
+        placeholder="Your name"
+        required
+      />
+      <span *ngIf="checkFieldValidity(name)">Your name is required</span>
       <img
         class="input-icon"
         src="assets/img/icons/icons-sub/warning.svg"
         alt=""
+        *ngIf="checkFieldValidity(name)"
       />
     </div>
   </div>
+
+  <!-- Email Input -->
   <div class="normal-input">
     <div class="normal-input-with-img">
-      <input type="text" id="email" placeholder="Your email" />
-      <label for="email">Your email is required</label>
+      <label for="email">Your email</label>
+      <input
+        #email="ngModel"
+        [(ngModel)]="contactData.email"
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Your email"
+        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+        required
+      />
+      <span *ngIf="checkFieldValidity(email)">Your email is required</span>
       <img
         class="input-icon"
         src="assets/img/icons/icons-sub/warning.svg"
         alt=""
+        *ngIf="checkFieldValidity(email)"
       />
     </div>
   </div>
+
+  <!-- Message Input -->
   <div class="normal-input">
     <div class="textarea-with-resize normal-input-with-img">
-      <textarea id="message" placeholder="Your message"></textarea>
-      <label for="message">Your message is empty</label>
+      <label for="message"></label>
+      <textarea
+        #message="ngModel"
+        [(ngModel)]="contactData.message"
+        name="message"
+        id="message"
+        placeholder="Your message"
+        required
+      ></textarea>
+      <span *ngIf="checkFieldValidity(message)">Your message is empty</span>
       <img
         class="input-icon"
         src="assets/img/icons/icons-sub/warning.svg"
         alt=""
+        *ngIf="checkFieldValidity(message)"
       />
       <img
         class="textarea-resize"
@@ -40,7 +74,13 @@
   <div class="contact-form-privacy">
     <div class="checkbox-wrapper">
       <label class="checkbox">
-        <input class="checkbox__trigger visuallyhidden" type="checkbox" />
+        <input
+          class="checkbox__trigger visuallyhidden"
+          type="checkbox"
+          required
+          [(ngModel)]="contactData.privacy"
+          name="privacy"
+        />
         <span class="checkbox__symbol">
           <svg
             aria-hidden="true"
@@ -62,5 +102,5 @@
       </label>
     </div>
   </div>
-  <button type="submit" disabled>Send message :)</button>
+  <button type="submit" value="Submit" enabled>Send message :)</button>
 </form>
