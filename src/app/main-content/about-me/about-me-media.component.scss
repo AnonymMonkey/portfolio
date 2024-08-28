@@ -1,0 +1,41 @@
+@import "./../../../styles.scss";
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  .about-me {
+    justify-content: center;
+
+    .a-me-left {
+      width: 100%;
+    }
+
+    .a-me-right {
+      display: none;
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .a-me-left {
+    h2 {
+      font-size: 45px;
+    }
+
+    .a-me-left-sub {
+      width: 100% !important;
+    }
+  }
+}
+
+/* Very small devices (landscape tablets, 450px and down) */
+@media only screen and (max-width: 450px) {
+}

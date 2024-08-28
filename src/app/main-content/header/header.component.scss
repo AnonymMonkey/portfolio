@@ -22,7 +22,7 @@ header {
 
   .home-link {
     display: flex;
-    z-index: 15; /* Logo im Vordergrund halten */
+    z-index: 15;
   }
 
   img {
@@ -51,9 +51,8 @@ header {
     }
   }
 
-  /* Burger Menü */
   .burger-menu {
-    display: none; /* Verstecke es standardmäßig */
+    display: none;
     position: relative;
 
     .checkbox {
@@ -76,7 +75,7 @@ header {
       top: 50%;
       right: 20px;
       transform: translateY(-50%);
-      z-index: 14; /* Vor das Menü setzen, aber hinter das Logo */
+      z-index: 14;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -107,7 +106,7 @@ header {
     .menu-items {
       display: flex;
       flex-direction: column;
-      justify-content: center; /* Links in der Mitte platzieren */
+      justify-content: center;
       align-items: center;
       position: fixed;
       top: 0;
@@ -115,13 +114,11 @@ header {
       width: 100%;
       height: 100vh;
       background-color: rgba(0, 0, 0, 0.5);
-      padding-top: 0; /* Kein zusätzlicher Platz für den Header */
+      padding-top: 0;
       transition: transform 150ms ease-in-out;
       text-align: center;
-      transform: translateX(
-        100%
-      ); /* Initiale Position außerhalb des Bildschirms */
-      z-index: 10; /* Hinter dem Logo */
+      transform: translateX(100%);
+      z-index: 10;
     }
 
     a {
@@ -139,12 +136,10 @@ header {
       }
     }
 
-    /* Animation für das geöffnete Menü */
     .checkbox:checked ~ .menu-items {
-      transform: translateX(0); /* Menü kommt von rechts */
+      transform: translateX(0);
     }
 
-    /* Animation der Linien für das Burger-Icon */
     .checkbox:checked ~ .hamburger-lines .line1 {
       transform: rotate(45deg);
     }
@@ -158,14 +153,13 @@ header {
     }
   }
 
-  /* Burger Menü ab 600px und kleiner anzeigen */
   @media (max-width: 600px) {
     .qick-links {
-      display: none; /* Verstecke die Links */
+      display: none;
     }
 
     .burger-menu {
-      display: block; /* Zeige das Burger-Menü */
+      display: block;
     }
   }
 }
