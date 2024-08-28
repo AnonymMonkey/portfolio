@@ -5,7 +5,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './footer.component.html',
-  styleUrl: './footer.component.scss',
+  styleUrls: ['./footer.component.scss', './footer-media.component.scss'],
   encapsulation: ViewEncapsulation.None,
 })
 export class FooterComponent {}
