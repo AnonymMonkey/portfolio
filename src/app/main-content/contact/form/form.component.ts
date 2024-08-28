@@ -8,7 +8,7 @@ import { FormsModule, NgForm, NgModel } from '@angular/forms';
   standalone: true,
   imports: [FormsModule, CommonModule],
   templateUrl: './form.component.html',
-  styleUrl: './form.component.scss',
+  styleUrls: ['./form.component.scss', './form-media.component.scss'],
 })
 export class FormComponent {
   http = inject(HttpClient);
