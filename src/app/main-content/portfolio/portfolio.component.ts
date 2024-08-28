@@ -14,7 +14,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule, ProjectsComponent],
   templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.scss'],
+  styleUrls: ['./portfolio.component.scss', './portfolio-media.component.scss'],
 })
 export class PortfolioComponent implements AfterViewInit {
   @ViewChildren(ProjectsComponent, { read: ElementRef })
