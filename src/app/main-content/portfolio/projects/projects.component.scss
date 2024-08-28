@@ -1,3 +1,5 @@
+@import "./../../../../styles.scss";
+
 .projects {
   display: flex;
   align-items: center;
@@ -33,14 +35,14 @@ img {
 
   gap: 35px;
 
-  color: white;
+  color: $color-white;
 
   h3 {
     font-size: 32px;
     font-weight: 700;
     text-align: left;
 
-    color: #4b47ff;
+    color: $color-darkblue;
   }
 
   > .project-rightside-description {
@@ -54,7 +56,7 @@ img {
       font-weight: 400;
       text-align: left;
 
-      color: #00bee8;
+      color: $color-lightblue;
     }
 
     p:nth-child(2) {
@@ -77,8 +79,8 @@ img {
       border-radius: 10px;
       border-style: none;
 
-      background-color: #4b47ff;
-      color: white;
+      background-color: $color-darkblue;
+      color: $color-white;
 
       font-size: 23px;
       font-weight: 400;
@@ -88,7 +90,7 @@ img {
       cursor: pointer;
 
       &:hover {
-        background-color: #00bee8;
+        background-color: $color-lightblue;
       }
     }
 
@@ -96,10 +98,10 @@ img {
       padding: 15px 30px 15px 30px;
       gap: 10px;
       border-radius: 10px;
-      border: 1px solid #00bee8;
+      border: 1px solid $color-lightblue;
 
       background-color: transparent;
-      color: white;
+      color: $color-white;
 
       font-size: 23px;
       font-weight: 400;
@@ -109,7 +111,7 @@ img {
       cursor: pointer;
 
       &:hover {
-        background-color: #00bee8;
+        background-color: $color-lightblue;
       }
     }
   }
