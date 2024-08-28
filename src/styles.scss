@@ -6,8 +6,26 @@
   box-sizing: border-box;
 }
 
+:root {
+  --space: 100px;
+  --space-negativ: -100px;
+}
+
+@media (max-width: 992px) {
+  :root {
+    --space: 50px;
+    --space-negativ: -50px;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --space: 25px;
+    --space-negativ: -25px;
+  }
+}
+
 $width: clamp(300px, 100%, 1440px);
-$padding: 0 100px;
 
 $color-bg: #141d2f;
 
@@ -206,4 +224,20 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
 }

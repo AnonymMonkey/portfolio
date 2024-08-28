@@ -1,14 +1,18 @@
 <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
   <!-- Name Input -->
   <div class="normal-input">
-    <div class="normal-input-with-img">
-      <label for="name">Your name</label>
+    <label for="name" class="visually-hidden">Name</label>
+    <div
+      class="normal-input-with-img"
+      [ngClass]="{ 'has-error': checkFieldValidity(name) }"
+    >
       <input
         #name="ngModel"
         [(ngModel)]="contactData.name"
         name="name"
         id="name"
         placeholder="Your name"
+        autocomplete="off"
         required
       />
       <span *ngIf="checkFieldValidity(name)">Your name is required</span>
@@ -23,8 +27,11 @@
 
   <!-- Email Input -->
   <div class="normal-input">
-    <div class="normal-input-with-img">
-      <label for="email">Your email</label>
+    <label for="email" class="visually-hidden">Email</label>
+    <div
+      class="normal-input-with-img"
+      [ngClass]="{ 'has-error': checkFieldValidity(email) }"
+    >
       <input
         #email="ngModel"
         [(ngModel)]="contactData.email"
@@ -33,6 +40,7 @@
         id="email"
         placeholder="Your email"
         pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+        autocomplete="off"
         required
       />
       <span *ngIf="checkFieldValidity(email)">Your email is required</span>
@@ -47,14 +55,18 @@
 
   <!-- Message Input -->
   <div class="normal-input">
-    <div class="textarea-with-resize normal-input-with-img">
-      <label for="message"></label>
+    <label for="message" class="visually-hidden">Message</label>
+    <div
+      class="textarea-with-resize normal-input-with-img"
+      [ngClass]="{ 'has-error': checkFieldValidity(message) }"
+    >
       <textarea
         #message="ngModel"
         [(ngModel)]="contactData.message"
         name="message"
         id="message"
         placeholder="Your message"
+        autocomplete="off"
         required
       ></textarea>
       <span *ngIf="checkFieldValidity(message)">Your message is empty</span>
@@ -67,10 +79,12 @@
       <img
         class="textarea-resize"
         src="assets/img/icons/icons-sub/resize.svg"
-        alt=""
+        alt="Resize icon"
       />
     </div>
   </div>
+
+  <!-- Privacy Checkbox -->
   <div class="contact-form-privacy">
     <div class="checkbox-wrapper">
       <label class="checkbox">
@@ -102,5 +116,10 @@
       </label>
     </div>
   </div>
-  <button type="submit" value="Submit" enabled>Send message :)</button>
+  <button
+    [ngClass]="{ 'button--active': contactForm.valid && contactForm.dirty }"
+    [disabled]="!contactForm.valid"
+  >
+    Send message :)
+  </button>
 </form>

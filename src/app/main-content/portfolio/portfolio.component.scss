@@ -4,7 +4,7 @@
   position: relative;
 
   width: $width;
-  padding: $padding;
+  padding: 0 var(--space);
 }
 
 .p-start {
@@ -67,7 +67,7 @@
 
 .bg-shape-portfolio-end {
   position: absolute;
-  bottom: -100px;
+  bottom: var(--space-negativ);
   right: -250px;
   width: 508px;
   rotate: 75deg;

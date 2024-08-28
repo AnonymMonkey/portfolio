@@ -7,6 +7,17 @@ form {
   width: 100%;
   gap: 32px;
 
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
   .normal-input {
     display: flex;
     flex-direction: column;
@@ -27,7 +38,10 @@ form {
         border-radius: 10px;
         border: 1px solid $color-darkblue;
         background-color: transparent;
-        transition: 100ms;
+        font-size: 16px;
+        font-weight: 400;
+        color: $color-white;
+        transition: border-color 0.3s ease-in-out;
         cursor: pointer;
 
         &::placeholder {
@@ -41,22 +55,28 @@ form {
         }
 
         &:focus {
-          transition: 100ms;
           outline: none;
-          border-color: $color-contact-error;
-          color: $color-white;
+          border-color: $color-lightblue;
 
           &::placeholder {
             color: transparent;
           }
+        }
+      }
 
-          & ~ .input-icon {
-            display: flex;
-          }
+      &.has-error {
+        input,
+        textarea {
+          border-color: $color-contact-error;
+        }
 
-          & ~ label {
-            display: flex;
-          }
+        .input-icon {
+          display: flex;
+        }
+
+        span {
+          opacity: 1;
+          visibility: visible;
         }
       }
 
@@ -72,11 +92,13 @@ form {
       }
     }
 
-    label {
-      display: none;
+    span {
+      position: absolute;
+      bottom: -20px;
+      opacity: 0;
+      visibility: hidden;
       font-size: 14px;
       font-weight: 400;
-      margin-top: 10px;
       color: $color-contact-error;
     }
   }
@@ -124,12 +146,26 @@ form {
     padding: 15px 30px;
     gap: 10px;
     border-radius: 10px;
+    border-style: none;
     color: $color-white;
     font-size: 23px;
     font-weight: 400;
+    background-color: $color-contact-desabled;
+    transition: background-color 0.3s ease-in-out;
 
     &:disabled {
       background-color: $color-contact-desabled;
+    }
+
+    &.button--active {
+      background-color: $color-lightblue;
+      cursor: pointer;
+      transition: 100ms ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+        background: $color-darkblue;
+      }
     }
   }
 }

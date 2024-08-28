@@ -5,7 +5,7 @@
   z-index: 2;
 
   width: $width;
-  padding: $padding;
+  padding: 0 var(--space);
 
   display: flex;
   justify-content: space-between;

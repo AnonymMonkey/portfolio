@@ -21,7 +21,7 @@
   position: relative;
   gap: 50px;
   margin-bottom: 85px;
-  padding-right: 100px;
+  padding-right: var(--space);
 
   div {
     width: 50px;
@@ -38,7 +38,8 @@
 .contact-content {
   display: flex;
   justify-content: space-between;
-  padding: $padding;
+  padding: 0 var(--space);
+  gap: 40px;
 
   .contact-description {
     display: flex;
@@ -65,7 +66,7 @@
   margin-top: 50px;
   width: fit-content;
   position: absolute;
-  right: 100px;
+  right: var(--space);
 }
 
 .bg-shape-end {

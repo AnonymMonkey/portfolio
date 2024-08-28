@@ -52,6 +52,6 @@ export class FormComponent {
   }
 
   checkFieldValidity(field: NgModel) {
-    return !field.valid && field.touched && !field.disabled;
+    return field.invalid && (field.dirty || field.touched);
   }
 }
