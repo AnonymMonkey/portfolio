@@ -6,6 +6,6 @@ import { FormComponent } from './form/form.component';
   standalone: true,
   imports: [FormComponent],
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.scss',
+  styleUrls: ['./contact.component.scss', './contact-media.component.scss'],
 })
 export class ContactComponent {}
