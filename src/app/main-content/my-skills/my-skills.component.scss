@@ -15,8 +15,7 @@
   display: flex;
   flex-wrap: wrap;
 
-  width: 721px;
-  height: 414.41px;
+  width: 100%;
   gap: 54px;
 
   div {
@@ -106,6 +105,7 @@
     color: white;
 
     text-decoration: none;
+    text-align: center;
 
     transition: 100ms;
 
@@ -121,10 +121,10 @@
 
 .bg-shape-my-skills {
   position: absolute;
-  top: 10%;
-  left: -470px;
+  top: 80%;
+  left: -250px;
   z-index: -1;
   width: 560px;
-  rotate: 190deg;
+  rotate: 160deg;
   transform: scaleX(-1);
 }

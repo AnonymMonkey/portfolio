@@ -2,6 +2,24 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {
+  .projects {
+    flex-direction: column;
+
+    img {
+      height: unset;
+      width: 50%;
+    }
+
+    .project-rightside {
+      align-items: center;
+      margin-top: -8%;
+
+      .project-rightside-description {
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -10,12 +28,31 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
+  .projects {
+    img {
+      width: 100%;
+    }
+  }
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .project-rightside {
+    width: 100%;
+
+    .project-rightside-buttons {
+      button {
+        text-wrap: nowrap;
+      }
+    }
+  }
 }
 
 /* Very small devices (landscape tablets, 450px and down) */
 @media only screen and (max-width: 450px) {
+  .project-rightside-buttons {
+    width: 100% !important;
+    gap: 8px !important;
+    transform: scale(0.8);
+  }
 }

@@ -2,10 +2,24 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {
+  .my-skills {
+    flex-direction: column-reverse;
+    gap: 60px;
+
+    .m-skills-right {
+      align-items: end;
+      margin-right: 10px;
+    }
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
+  .m-skills-right-headline {
+    div {
+      width: var(--space) !important;
+    }
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -14,6 +28,45 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .m-skills-right {
+    .m-skills-right-headline {
+      h2 {
+        font-size: 45px !important;
+      }
+    }
+
+    p {
+      width: 100%;
+    }
+
+    a {
+      position: absolute;
+      bottom: -100px;
+      transform: translateX(-50%);
+      left: 50%;
+    }
+  }
+
+  .m-skills-left {
+    gap: 45px;
+
+    div {
+      width: 60px !important;
+
+      img {
+        height: 45px !important;
+      }
+
+      p {
+        font-size: 14px !important;
+      }
+    }
+  }
+
+  .bg-shape-my-skills {
+    top: 100%;
+    left: -300px;
+  }
 }
 
 /* Very small devices (landscape tablets, 450px and down) */

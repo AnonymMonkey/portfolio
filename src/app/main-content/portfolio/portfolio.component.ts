@@ -42,13 +42,30 @@ export class PortfolioComponent implements AfterViewInit {
   constructor(private renderer: Renderer2) {}
 
   ngAfterViewInit() {
-    let count = 1;
-    this.projects.forEach((project: ElementRef) => {
-      const projectRightside = project.nativeElement.querySelector('.projects');
-      if (count % 2 === 0) {
-        this.renderer.addClass(projectRightside, 'align-end');
+    const mediaQuery = window.matchMedia('(min-width: 1200px)');
+
+    const applyAlignEndClass = () => {
+      if (mediaQuery.matches) {
+        let count = 1;
+        this.projects.forEach((project: ElementRef) => {
+          const projectRightside =
+            project.nativeElement.querySelector('.projects');
+          if (count % 2 === 0) {
+            this.renderer.addClass(projectRightside, 'align-end');
+          }
+          count++;
+        });
+      } else {
+        this.projects.forEach((project: ElementRef) => {
+          const projectRightside =
+            project.nativeElement.querySelector('.projects');
+          this.renderer.removeClass(projectRightside, 'align-end');
+        });
       }
-      count++;
-    });
+    };
+
+    applyAlignEndClass();
+
+    mediaQuery.addEventListener('change', applyAlignEndClass);
   }
 }

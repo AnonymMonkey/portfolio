@@ -2,65 +2,74 @@
 
 .portfolio {
   position: relative;
+  z-index: 2;
 
   width: $width;
   padding: 0 var(--space);
-}
 
-.p-start {
-  display: flex;
-  flex-direction: column;
-
-  position: relative;
-  right: -290px;
-
-  gap: 35px;
-
-  .p-headline {
+  .p-start {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    position: absolute;
+    left: calc(
+      50% + -35px + var(--space-negativ) + -194px
+        /* <- = width h2 element divided by two */
+    );
+    width: 100vw;
+    gap: 35px;
 
-    gap: 36px;
+    text-align: start;
 
-    .p-headline-cutline-small {
-      width: 109px;
-      height: 4px;
-      background-color: #4b47ff;
-    }
-
-    h2 {
+    .p-headline {
       display: flex;
-      justify-content: center;
       align-items: center;
+      gap: 36px;
+      width: 100%;
 
-      width: 389px;
-      height: 108px;
+      .p-headline-cutline-small {
+        min-width: var(--space);
+        height: 4px;
+        background-color: $color-darkblue;
+      }
 
-      font-size: 90px;
-      font-weight: 700;
-      text-align: center;
+      h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-      color: white;
+        font-size: 90px;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: 2px;
+
+        color: $color-white;
+      }
+
+      .p-headline-cutline-big {
+        width: 100%;
+        height: 4px;
+        background-color: $color-darkblue;
+      }
     }
 
-    .p-headline-cutline-big {
-      width: 484px;
-      height: 4px;
-      background-color: #4b47ff;
+    p {
+      color: $color-white;
+      font-size: 16px;
+      font-weight: 400;
+      width: 100%;
     }
   }
 
-  p {
-    color: white;
-    font-size: 16px;
-    font-weight: 400;
+  .p-projects {
+    padding-top: 100px;
   }
 }
 
 .bg-shape-portfolio-mid {
   position: absolute;
   left: -150px;
-  top: 36%;
+  top: 34%;
   z-index: -1;
   width: 636px;
 }
