@@ -12,7 +12,7 @@
 
   width: $width;
 
-  padding-bottom: 160px;
+  padding: 0 var(--space) 160px var(--space);
 }
 
 .contact-headline {
@@ -21,7 +21,6 @@
   position: relative;
   gap: 50px;
   margin-bottom: 85px;
-  padding-right: var(--space);
 
   div {
     width: 50px;
@@ -38,7 +37,6 @@
 .contact-content {
   display: flex;
   justify-content: space-between;
-  padding: 0 var(--space);
   gap: 40px;
 
   .contact-description {

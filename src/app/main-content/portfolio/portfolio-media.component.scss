@@ -14,6 +14,20 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .p-start {
+    position: absolute !important;
+    left: 0 !important;
+    width: unset !important;
+
+    .p-headline {
+      h2 {
+        font-size: 45px !important;
+      }
+    }
+
+    p {
+    }
+  }
 }
 
 /* Very small devices (landscape tablets, 450px and down) */

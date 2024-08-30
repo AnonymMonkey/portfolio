@@ -10,6 +10,15 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .bg-shape-end {
+    bottom: unset;
+    top: 50%;
+    rotate: 160deg;
+  }
 }
 
 /* Extra small devices (phones, 600px and down) */
