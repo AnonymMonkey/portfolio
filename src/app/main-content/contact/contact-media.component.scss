@@ -23,6 +23,21 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .contact-headline {
+    gap: 10px !important;
+
+    h2 {
+      font-size: 45px !important;
+    }
+  }
+
+  .contact-description {
+    width: 100% !important;
+    gap: 25px !important;
+    p:first-child {
+      font-size: 23px !important;
+    }
+  }
 }
 
 /* Very small devices (landscape tablets, 450px and down) */

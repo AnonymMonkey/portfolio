@@ -25,14 +25,14 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 300px) {
   :root {
     --space: 0;
     --space-negativ: 0;
   }
 }
 
-$width: clamp(300px, 100%, 1440px);
+$width: clamp(250px, 100%, 1440px);
 
 $color-bg: #141d2f;
 

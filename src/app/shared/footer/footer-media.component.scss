@@ -10,6 +10,29 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    height: 35vh;
+
+    .footer-left {
+      .home-link {
+        justify-content: center;
+        img {
+          width: 75%;
+        }
+      }
+
+      a:nth-child(2) {
+        position: absolute;
+        bottom: 10%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
 }
 
 /* Extra small devices (phones, 600px and down) */

@@ -51,6 +51,7 @@
 /* Very small devices (landscape tablets, 450px and down) */
 @media only screen and (max-width: 450px) {
   .project-rightside-buttons {
+    justify-content: center !important;
     width: 100% !important;
     gap: 8px !important;
     transform: scale(0.8);
