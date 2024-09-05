@@ -12,4 +12,6 @@ export class ProjectsComponent {
   @Input() skills!: string;
   @Input() description!: string;
   @Input() image!: string;
+  @Input() linksProjects!: string;
+  @Input() linksGithub!: string;
 }

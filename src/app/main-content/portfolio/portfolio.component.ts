@@ -34,8 +34,18 @@ export class PortfolioComponent implements AfterViewInit {
     ],
     images: [
       'assets/img/projects/join-laptop.png',
+      'assets/img/projects/pollo-loco-laptop.png',
       'assets/img/projects/join-laptop.png',
-      'assets/img/projects/join-laptop.png',
+    ],
+    linksProjects: [
+      'https://andino-eichberger.developerakademie.net/join/index.html',
+      'https://andino-eichberger.developerakademie.net/el-pollo-loco/index.html',
+      '#',
+    ],
+    linksGithub: [
+      'https://github.com/AnonymMonkey/join',
+      'https://github.com/AnonymMonkey/el-pollo-loco',
+      '#',
     ],
   };
 
