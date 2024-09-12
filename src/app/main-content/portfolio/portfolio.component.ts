@@ -23,7 +23,7 @@ export class PortfolioComponent implements AfterViewInit {
   projectsData = {
     title: ['Join', 'El Pollo Loco', 'Another Project'],
     skills: [
-      'JavaScript | HTML | CSS',
+      'Firebase | JavaScript | HTML | CSS',
       'JavaScript | HTML | CSS',
       'Another Project',
     ],

@@ -14,7 +14,7 @@
 
     .avatar-with-bg {
       left: unset;
-      margin-top: 110px;
+      margin-top: 25%;
     }
 
     .atf-right {
@@ -26,6 +26,11 @@
     .atf-info {
       .atf-info-left {
         width: 100%;
+        left: unset;
+
+        .cutline {
+          width: unset;
+        }
 
         a {
           display: none;
@@ -45,17 +50,25 @@
     }
 
     .slide {
-      height: 60vh;
+      height: 50vh;
+      width: 125vw;
     }
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
+  .avatar-with-bg {
+    width: 80%;
+  }
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .avatar-with-bg {
+    width: 100%;
+  }
+
   .atf-right {
     transform: scale(0.6);
 
