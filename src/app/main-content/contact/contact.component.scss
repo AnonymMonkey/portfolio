@@ -5,6 +5,9 @@
 }
 
 .contact {
+  display: flex;
+  flex-direction: column;
+
   position: relative;
   z-index: 1;
 
@@ -19,13 +22,17 @@
   display: flex;
   align-items: center;
   position: relative;
-  gap: 50px;
+  left: -50px;
+  padding-left: 50px;
   margin-bottom: 85px;
 
   div {
     min-width: var(--space);
+    position: absolute;
+    left: -100vw;
+    width: 100vw;
     height: 4px;
-    background-color: $color-darkblue;
+    background-color: #4b47ff;
   }
 
   h2 {
@@ -61,9 +68,10 @@
 .arrow-up {
   display: flex;
   justify-content: end;
-  margin-top: 50px;
+  margin-bottom: 50px;
   width: fit-content;
   position: absolute;
+  bottom: 0;
   right: var(--space);
 }
 

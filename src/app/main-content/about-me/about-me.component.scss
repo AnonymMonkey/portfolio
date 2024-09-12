@@ -63,8 +63,8 @@
   display: flex;
   align-items: center;
 
-  position: relative;
-  right: var(--space-negativ);
+  position: absolute;
+  right: calc(-100vw + var(--space));
 
   > img {
     width: 453px;
@@ -77,7 +77,7 @@
   }
 
   > div {
-    width: 267px;
+    width: 100vw;
     height: 4px;
     border: 4px;
     background: #00bee8;
