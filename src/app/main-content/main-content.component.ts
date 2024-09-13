@@ -20,6 +20,9 @@ import { ContactComponent } from './contact/contact.component';
     ContactComponent,
   ],
   templateUrl: './main-content.component.html',
-  styleUrl: './main-content.component.scss',
+  styleUrls: [
+    './main-content.component.scss',
+    './main-content-media.component.scss',
+  ],
 })
 export class MainContentComponent {}

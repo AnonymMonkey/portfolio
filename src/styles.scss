@@ -1,6 +1,7 @@
 @import "aos/dist/aos.css";
 
-[data-aos] {
+[data-aos="fade-left"],
+[data-aos="fade-right"] {
   padding-top: 140px; /* Abstand oben hinzufügen */
   box-sizing: border-box; /* Sicherstellen, dass Padding in der Höhe enthalten ist */
 }

@@ -1,0 +1,23 @@
+@import "./../../../styles.scss";
+
+.landscape-warning {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  font-size: 20px;
+  z-index: 1000;
+  text-align: center;
+
+  background-color: $color-bg;
+  -webkit-box-shadow: inset 0px 0px 8px 2px $color-lightblue;
+  -moz-box-shadow: inset 0px 0px 8px 2px $color-lightblue;
+  box-shadow: inset 0px 0px 8px 2px $color-lightblue;
+}
