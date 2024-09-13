@@ -1,5 +1,10 @@
 @import "aos/dist/aos.css";
 
+[data-aos] {
+  padding-top: 140px; /* Abstand oben hinzufügen */
+  box-sizing: border-box; /* Sicherstellen, dass Padding in der Höhe enthalten ist */
+}
+
 * {
   margin: 0;
   padding: 0;

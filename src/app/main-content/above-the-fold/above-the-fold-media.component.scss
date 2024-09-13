@@ -10,11 +10,10 @@
 @media only screen and (max-width: 992px) {
   .landing-page {
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
 
     .avatar-with-bg {
       left: unset;
-      margin-top: 25%;
     }
 
     .atf-right {
