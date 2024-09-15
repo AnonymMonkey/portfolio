@@ -14,7 +14,7 @@
 
     .avatar-with-bg {
       left: unset;
-      width: 100%;
+      width: 80%;
     }
 
     .atf-right {
@@ -58,6 +58,9 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
+  .avatar-with-bg {
+    width: 100% !important;
+  }
 }
 
 /* Extra small devices (phones, 600px and down) */
