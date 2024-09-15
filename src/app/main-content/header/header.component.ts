@@ -1,5 +1,5 @@
 import { ViewportScroller } from '@angular/common';
-import { Component, OnInit, Renderer2 } from '@angular/core';
+import { Component, HostListener, OnInit, Renderer2 } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 @Component({
@@ -18,7 +18,7 @@ export class HeaderComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.observeSections();
+    this.updateActiveSectionOnScroll();
   }
 
   scrollToSection(sectionId: string): void {
@@ -35,33 +35,33 @@ export class HeaderComponent implements OnInit {
     }
   }
 
-  observeSections() {
+  // Scroll event listener
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.updateActiveSectionOnScroll();
+  }
+
+  // Update active section based on scroll position
+  updateActiveSectionOnScroll() {
     const sections = document.querySelectorAll(
       'app-about-me, app-my-skills, app-portfolio'
     );
-    const options = {
-      root: null,
-      threshold: 0.3,
-    };
 
-    const observer = new IntersectionObserver((entries) => {
-      let activeSectionId: string | null = null;
-
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const sectionId = entry.target.getAttribute('id');
-          if (sectionId) {
-            activeSectionId = sectionId;
-          }
-        }
-      });
-
-      this.updateActiveLink(activeSectionId);
-    }, options);
+    let currentSection: string | null = null;
 
     sections.forEach((section) => {
-      observer.observe(section);
+      const rect = section.getBoundingClientRect();
+      const sectionId = section.getAttribute('id');
+
+      if (
+        rect.top <= window.innerHeight * 0.3 &&
+        rect.bottom >= window.innerHeight * 0.2
+      ) {
+        currentSection = sectionId;
+      }
     });
+
+    this.updateActiveLink(currentSection);
   }
 
   updateActiveLink(sectionId: string | null) {
