@@ -17,6 +17,10 @@
       .project-rightside-description {
         align-items: center;
         text-align: center;
+
+        p:first-child {
+          text-align: center;
+        }
       }
     }
   }
@@ -37,6 +41,10 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .projects {
+    margin: 0;
+  }
+
   .project-rightside {
     width: 100%;
 
