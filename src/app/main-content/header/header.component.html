@@ -4,9 +4,11 @@
       <img src="assets\img\me\logo.png" alt="" />
     </a>
     <div class="qick-links">
-      <a (click)="scrollToSection('about')">About me</a>
-      <a (click)="scrollToSection('skills')">Skills</a>
-      <a (click)="scrollToSection('portfolio')">Portfolio</a>
+      <a data-section="about" (click)="scrollToSection('about')">About me</a>
+      <a data-section="skills" (click)="scrollToSection('skills')">Skills</a>
+      <a data-section="portfolio" (click)="scrollToSection('portfolio')"
+        >Portfolio</a
+      >
     </div>
 
     <!-- Burger Menu -->
