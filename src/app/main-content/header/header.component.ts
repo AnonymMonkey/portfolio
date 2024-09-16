@@ -35,13 +35,11 @@ export class HeaderComponent implements OnInit {
     }
   }
 
-  // Scroll event listener
   @HostListener('window:scroll', [])
   onWindowScroll() {
     this.updateActiveSectionOnScroll();
   }
 
-  // Update active section based on scroll position
   updateActiveSectionOnScroll() {
     const sections = document.querySelectorAll(
       'app-about-me, app-my-skills, app-portfolio'

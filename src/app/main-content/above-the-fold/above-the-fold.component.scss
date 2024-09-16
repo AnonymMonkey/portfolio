@@ -46,7 +46,7 @@
   .atf-text {
     display: flex;
     align-items: center;
-    height: 134px;
+    height: 174px;
 
     .rotated-container {
       width: 60px;
@@ -56,7 +56,7 @@
       justify-content: center;
 
       > p {
-        font-size: 74px;
+        font-size: 66px;
         font-weight: 400;
         color: #ffffff;
         text-wrap: nowrap;
@@ -68,16 +68,15 @@
     .atf-name {
       display: flex;
       flex-direction: column;
-      margin-left: 20px; /* Abstand zwischen dem gedrehten Text und den normalen Texten */
+      margin-left: 20px;
 
       > p:first-child {
         font-size: 70px;
         font-weight: 700;
-        line-height: 110px;
+
         text-align: left;
         text-wrap: nowrap;
         color: $color-white;
-        margin: 0; /* Entfernt jeglichen Abstand um den Text */
       }
 
       > p:nth-child(2) {
@@ -86,7 +85,6 @@
         font-weight: 400;
         text-align: left;
         color: $color-darkblue;
-        margin: 0; /* Entfernt jeglichen Abstand um den Text */
       }
     }
   }
