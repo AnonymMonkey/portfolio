@@ -32,6 +32,7 @@ header {
 
   .qick-links {
     display: flex;
+    align-items: center;
     height: 32px;
     gap: 29px;
 
@@ -64,8 +65,19 @@ header {
         color: #00bee8;
 
         &:after {
-          width: 100%;
+          width: 50%;
         }
+      }
+    }
+
+    .language-button {
+      width: 42px;
+      height: 42px;
+
+      transition: 75ms;
+
+      &:hover {
+        transform: scale(1.1);
       }
     }
   }
@@ -169,7 +181,7 @@ header {
         transform: scale(1.05);
 
         &:after {
-          width: 100%;
+          width: 50%;
         }
       }
     }

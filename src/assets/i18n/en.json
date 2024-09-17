@@ -1,0 +1,78 @@
+{
+  "home": "Home",
+  "about_me": {
+    "headline": "About me",
+    "intro": "Hi, I am a front-end developer based in Groß Twülpstedt near Wolfsburg, Germany. I have had the opportunity to gain experience in a wide variety of areas and was finally able to fulfill my dream of working as a software developer. As a huge fan of digitization, I want to use my experience as a software developer to polish up and improve the future in this area. Digitization is the future!",
+    "character": "My character is primarily characterized by calmness, reliability, and the great desire to be able to support others wherever I can.",
+    "personality": "I am a very relaxed and at the same time direct guy with whom you always have a fun and pleasant working atmosphere."
+  },
+  "my_skills": {
+    "headline": "My skills",
+    "intro": "I have grown my frontend developments skills that have allowed me to create different real projects.",
+    "skills": {
+      "angular": "Angular",
+      "typescript": "Typescript",
+      "firebase": "Firebase",
+      "git": "GIT",
+      "html": "HTML",
+      "css": "CSS",
+      "javascript": "JavaScript",
+      "api": "Rest-Api",
+      "material_design": "Material design"
+    }
+  },
+  "portfolio": {
+    "headline": "Portfolio",
+    "intro": "Explore a selection of my work here - Interact with projects to see my skills in action."
+  },
+  "contact": {
+    "headline": "Contact",
+    "description": {
+      "problem": "Got a problem to solve?",
+      "intro": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+      "need": "Need a Frontend developer? Contact me!"
+    }
+  },
+  "form": {
+    "name_placeholder": "Your name",
+    "email_placeholder": "Your email",
+    "message_placeholder": "Your message",
+    "privacy_policy": "I've read the privacy policy and agree to the processing of my data as outlined.",
+    "send_message": "Send message :)",
+    "required_name": "Your name is required",
+    "required_email": "Your email is required",
+    "empty_message": "Your message is empty"
+  },
+  "imprint": {
+    "headline": "Impressum",
+    "section_title": "Angaben gemäß § 5 DDG",
+    "address": {
+      "name": "Andino Eichberger",
+      "street": "Fliederweg 1A",
+      "city": "38464 Klein Twülpstedt / Groß Twülpstedt"
+    },
+    "contact": {
+      "headline": "Kontakt:",
+      "phone": "Telefon:",
+      "email": "E-Mail:"
+    },
+    "disclaimer": {
+      "headline": "Haftungsausschluss:",
+      "content": [
+        "Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 DDG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 DDG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.",
+        "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.",
+        "Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich. Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.",
+        "Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen."
+      ]
+    },
+    "generator": "Website Impressum von impressum-generator.de"
+  },
+  "landscape_warning": {
+    "message1": "This page is only viewable in portrait mode!",
+    "message2": "Please turn your device."
+  },
+  "footer": {
+    "imprint": "Imprint",
+    "copyright": "© Andino Eichberger 2024"
+  }
+}
