@@ -73,6 +73,7 @@ a {
 
   .i-generator-link {
     display: flex;
+    flex-direction: column;
     gap: 4px;
     font-size: 0.75em;
   }
