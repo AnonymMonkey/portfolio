@@ -21,20 +21,16 @@ export class PortfolioComponent implements AfterViewInit {
   projects!: QueryList<ElementRef>;
 
   projectsData = {
-    title: [
-      'Join',
-      'El Pollo Loco',
-      $localize`:@@anotherProject:Another Project`,
-    ],
+    title: ['Join', 'El Pollo Loco', `:@@anotherProject:Another Project`],
     skills: [
       'Firebase | JavaScript | HTML | CSS',
       'JavaScript | HTML | CSS',
-      $localize`:@@skillsAnotherProject:Another Project`,
+      `:@@skillsAnotherProject:Another Project`,
     ],
     description: [
-      $localize`:@@descriptionJoin:Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.`,
-      $localize`:@@descriptionPollo:A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and Salsa bottles to fight against the chickens.`,
-      $localize`:@@descriptionAnotherProject:Another Project`,
+      `:@@descriptionJoin:Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.`,
+      `:@@descriptionPollo:A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and Salsa bottles to fight against the chickens.`,
+      `:@@descriptionAnotherProject:Another Project`,
     ],
     images: [
       'assets/img/projects/join-laptop.png',
@@ -42,8 +38,8 @@ export class PortfolioComponent implements AfterViewInit {
       'assets/img/projects/join-laptop.png',
     ],
     linksProjects: [
-      'https://andino-eichberger.developerakademie.net/join/index.html',
-      'https://andino-eichberger.developerakademie.net/el-pollo-loco/index.html',
+      'https://join.andino-eichberger.com/index.html',
+      'https://el-pollo-loco.andino-eichberger.com/index.html',
       '#',
     ],
     linksGithub: [
