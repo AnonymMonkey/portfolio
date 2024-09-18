@@ -21,16 +21,20 @@ export class PortfolioComponent implements AfterViewInit {
   projects!: QueryList<ElementRef>;
 
   projectsData = {
-    title: ['Join', 'El Pollo Loco', 'Another Project'],
+    title: [
+      'Join',
+      'El Pollo Loco',
+      $localize`:@@anotherProject:Another Project`,
+    ],
     skills: [
       'Firebase | JavaScript | HTML | CSS',
       'JavaScript | HTML | CSS',
-      'Another Project',
+      $localize`:@@skillsAnotherProject:Another Project`,
     ],
     description: [
-      'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
-      'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and Salsa bottles to fight against the chickens.',
-      'Another Project',
+      $localize`:@@descriptionJoin:Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.`,
+      $localize`:@@descriptionPollo:A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and Salsa bottles to fight against the chickens.`,
+      $localize`:@@descriptionAnotherProject:Another Project`,
     ],
     images: [
       'assets/img/projects/join-laptop.png',

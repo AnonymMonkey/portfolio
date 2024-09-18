@@ -12,14 +12,14 @@
   <div class="atf-right">
     <div class="atf-text">
       <div class="rotated-container">
-        <p>I am</p>
+        <p i18n="@@iAmText">I am</p>
       </div>
       <div class="atf-name">
         <p>Andino Eichberger</p>
-        <p>FRONTEND DEVELOPER</p>
+        <p i18n="@@jobTitleText">FRONTEND DEVELOPER</p>
       </div>
     </div>
-    <a (click)="scrollToSection('contact')">Let´s talk!</a>
+    <a (click)="scrollToSection('contact')" i18n="@@contactLink">Let´s talk!</a>
   </div>
 
   <!-- info -->
@@ -27,13 +27,21 @@
     <div class="atf-info-left">
       <div class="cutline"></div>
       <div class="atf-info-left-icons">
-        <img src="assets/img/icons/github.png" alt="github" />
-        <img src="assets/img/icons/mail.png" alt="mail" />
+        <a
+          href="https://github.com/AnonymMonkey"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="assets/img/icons/github.png" alt="github"
+        /></a>
+        <a href="mailto:eichberger.andino@gmail.com"
+          ><img src="assets/img/icons/mail.png" alt="mail"
+        /></a>
+
         <a href="mailto:eichberger.andino@gmail.com">{{ email }}</a>
       </div>
     </div>
     <div class="scroll-down">
-      <p>Scroll down</p>
+      <p i18n="@@scrollDownText">Scroll down</p>
       <img
         src="assets/img/icons/icons-sub/arrow-down-line.png"
         alt="arrow-down"

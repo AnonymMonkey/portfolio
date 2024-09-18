@@ -1,15 +1,28 @@
 <div class="long-bg">
   <header class="header">
     <a class="home-link" href="#">
-      <img src="assets\img\me\logo.png" alt="" />
+      <img src="assets/img/me/logo.png" alt="" />
     </a>
     <div class="qick-links">
-      <a data-section="about" (click)="scrollToSection('about')">About me</a>
-      <a data-section="skills" (click)="scrollToSection('skills')">Skills</a>
-      <a data-section="portfolio" (click)="scrollToSection('portfolio')"
+      <a
+        data-section="about"
+        (click)="scrollToSection('about')"
+        i18n="@@aboutLink"
+        >About me</a
+      >
+      <a
+        data-section="skills"
+        (click)="scrollToSection('skills')"
+        i18n="@@skillsLink"
+        >Skills</a
+      >
+      <a
+        data-section="portfolio"
+        (click)="scrollToSection('portfolio')"
+        i18n="@@portfolioLink"
         >Portfolio</a
       >
-      <img
+      <!--       <img
         class="language-button"
         src="assets/img/icons/english.png"
         alt="English"
@@ -18,7 +31,7 @@
         class="language-button"
         src="assets/img/icons/german.png"
         alt="German"
-      />
+      /> -->
     </div>
 
     <!-- Burger Menu -->
@@ -30,10 +43,12 @@
         <span class="line line3"></span>
       </div>
       <div class="menu-items">
-        <a (click)="scrollToSection('about')">About me</a>
-        <a (click)="scrollToSection('skills')">Skills</a>
-        <a (click)="scrollToSection('portfolio')">Portfolio</a>
-        <img
+        <a (click)="scrollToSection('about')" i18n="@@aboutLink">About me</a>
+        <a (click)="scrollToSection('skills')" i18n="@@skillsLink">Skills</a>
+        <a (click)="scrollToSection('portfolio')" i18n="@@portfolioLink"
+          >Portfolio</a
+        >
+        <!--         <img
           class="language-button"
           src="assets/img/icons/english.png"
           alt="English"
@@ -42,7 +57,7 @@
           class="language-button"
           src="assets/img/icons/german.png"
           alt="German"
-        />
+        /> -->
       </div>
     </nav>
   </header>

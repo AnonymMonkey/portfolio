@@ -26,7 +26,9 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["node_modules/aos/dist/aos.css", "src/styles.scss"],
             "scripts": [],
-            "allowedCommonJsDependencies": ["aos"]
+            "allowedCommonJsDependencies": ["aos"],
+            "localize": true,
+            "i18nMissingTranslation": "warning"
           },
           "configurations": {
             "production": {
@@ -42,12 +44,14 @@
                   "maximumError": "5mb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "localize": ["en", "de"]
             },
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true
+              "sourceMap": true,
+              "localize": ["en", "de"]
             }
           },
           "defaultConfiguration": "production"

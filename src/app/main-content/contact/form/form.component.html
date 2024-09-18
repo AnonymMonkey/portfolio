@@ -1,7 +1,7 @@
 <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
   <!-- Name Input -->
   <div class="normal-input">
-    <label for="name" class="visually-hidden">Name</label>
+    <label for="name" class="visually-hidden" i18n="@@labelName">Name</label>
     <div
       class="normal-input-with-img"
       [ngClass]="{ 'has-error': checkFieldValidity(name) }"
@@ -14,8 +14,11 @@
         placeholder="Your name"
         autocomplete="off"
         required
+        i18n-placeholder="@@placeholderName"
       />
-      <span *ngIf="checkFieldValidity(name)">Your name is required</span>
+      <span *ngIf="checkFieldValidity(name)" i18n="@@nameRequired"
+        >Your name is required</span
+      >
       <img
         class="input-icon"
         src="assets/img/icons/icons-sub/warning.svg"
@@ -27,7 +30,7 @@
 
   <!-- Email Input -->
   <div class="normal-input">
-    <label for="email" class="visually-hidden">Email</label>
+    <label for="email" class="visually-hidden" i18n="@@labelEmail">Email</label>
     <div
       class="normal-input-with-img"
       [ngClass]="{ 'has-error': checkFieldValidity(email) }"
@@ -42,8 +45,11 @@
         pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
         autocomplete="off"
         required
+        i18n-placeholder="@@placeholderEmail"
       />
-      <span *ngIf="checkFieldValidity(email)">Your email is required</span>
+      <span *ngIf="checkFieldValidity(email)" i18n="@@emailRequired"
+        >Your email is required</span
+      >
       <img
         class="input-icon"
         src="assets/img/icons/icons-sub/warning.svg"
@@ -55,7 +61,9 @@
 
   <!-- Message Input -->
   <div class="normal-input">
-    <label for="message" class="visually-hidden">Message</label>
+    <label for="message" class="visually-hidden" i18n="@@labelMessage"
+      >Message</label
+    >
     <div
       class="textarea-with-resize normal-input-with-img"
       [ngClass]="{ 'has-error': checkFieldValidity(message) }"
@@ -68,8 +76,11 @@
         placeholder="Your message"
         autocomplete="off"
         required
+        i18n-placeholder="@@placeholderMessage"
       ></textarea>
-      <span *ngIf="checkFieldValidity(message)">Your message is empty</span>
+      <span *ngIf="checkFieldValidity(message)" i18n="@@messageEmpty"
+        >Your message is empty</span
+      >
       <img
         class="input-icon"
         src="assets/img/icons/icons-sub/warning.svg"
@@ -109,9 +120,11 @@
           </svg>
         </span>
         <p class="checkbox__textwrapper">
-          I've read the
-          <a href="">privacy policy</a>
-          and agree to the processing of my data as outlined.
+          <span i18n="@@privacyPolicyAgreement"> I've read the </span>
+          <a href="" i18n="@@privacyPolicyLink">privacy policy</a>
+          <span i18n="@@privacyPolicyConsent">
+            and agree to the processing of my data as outlined.
+          </span>
         </p>
       </label>
     </div>
@@ -119,6 +132,7 @@
   <button
     [ngClass]="{ 'button--active': contactForm.valid && contactForm.dirty }"
     [disabled]="!contactForm.valid"
+    i18n="@@sendMessageButton"
   >
     Send message :)
   </button>
