@@ -20,16 +20,16 @@ export class FormComponent {
     privacy: false,
   };
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://andino-eichberger.com/php-scripts/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
-        'Content-Type': 'text/plain',
-        responseType: 'text',
+        'Content-Type': 'application/json',
       },
+      responseType: 'json' as const,
     },
   };
 
@@ -42,9 +42,9 @@ export class FormComponent {
             ngForm.resetForm();
           },
           error: (error) => {
-            console.error(error);
+            console.error('Fehler bei der Anfrage:', error);
           },
-          complete: () => console.info('send post complete'),
+          complete: () => console.info('Anfrage abgeschlossen'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       ngForm.resetForm();

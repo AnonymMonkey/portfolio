@@ -1,37 +1,44 @@
 <?php
 
-switch ($_SERVER['REQUEST_METHOD']) {
-    case ("OPTIONS"): //Allow preflighting to take place.
-        header("Access-Control-Allow-Origin: *");
-        header("Access-Control-Allow-Methods: POST");
-        header("Access-Control-Allow-Headers: content-type");
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: POST, OPTIONS");
+header("Access-Control-Allow-Headers: Content-Type");
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $json = file_get_contents('php://input');
+    $params = json_decode($json);
+
+    // Überprüfe, ob Felder gesetzt sind
+    if (!isset($params->email) || !isset($params->name) || !isset($params->message)) {
+        echo json_encode(['success' => false, 'error' => 'Missing required fields']);
         exit;
-        case("POST"): //Send the email;
-            header("Access-Control-Allow-Origin: *");
-            // Payload is not send to $_POST Variable,
-            // is send to php:input as a text
-            $json = file_get_contents('php://input');
-            //parse the Payload from text format to Object
-            $params = json_decode($json);
-    
-            $email = $params->email;
-            $name = $params->name;
-            $message = $params->message;
-    
-            $recipient = 'eichberger.andino@gmail.com';  
-            $subject = "Contact From <$email>";
-            $message = "From:" . $name . "<br>" . $message ;
-    
-            $headers   = array();
-            $headers[] = 'MIME-Version: 1.0';
-            $headers[] = 'Content-type: text/html; charset=utf-8';
+    }
 
-            // Additional headers
-            $headers[] = "From: noreply@mywebsite.com";
+    // Empfange die Daten
+    $email = filter_var($params->email, FILTER_SANITIZE_EMAIL);
+    $name = htmlspecialchars($params->name);
+    $messageContent = htmlspecialchars($params->message);
 
-            mail($recipient, $subject, $message, implode("\r\n", $headers));
-            break;
-        default: //Reject any non POST or OPTIONS requests.
-            header("Allow: POST", true, 405);
-            exit;
-    } 
+    // E-Mail senden
+    $recipient = 'eichberger.andino@gmail.com';  // Deine E-Mail-Adresse
+    $subject = "Kontaktformular: Nachricht von $name <$email>";
+    $message = "Name: $name<br>Email: $email<br>Nachricht:<br><br>$messageContent";
+
+    $headers   = array();
+    $headers[] = 'MIME-Version: 1.0';
+    $headers[] = 'Content-type: text/html; charset=utf-8';
+    $headers[] = "From: 'Mein Portfolio - Kontaktierung' <contact@andino-eichberger.com>";
+    $headers[] = "Reply-To: $email";
+    $headers[] = "X-Mailer: PHP/" . phpversion();
+
+    if (mail($recipient, $subject, $message, implode("\r\n", $headers))) {
+        // Nur reines JSON zurückgeben
+        echo json_encode(['success' => true, 'message' => 'Mail sent successfully']);
+    } else {
+        echo json_encode(['success' => false, 'error' => 'Mail function failed']);
+    }
+    exit;
+} else {
+    echo json_encode(['success' => false, 'error' => 'Only POST requests are allowed']);
+    exit;
+}
