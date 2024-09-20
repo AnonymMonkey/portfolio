@@ -4,34 +4,26 @@
       <img src="assets/img/me/logo.png" alt="" />
     </a>
     <div class="qick-links">
-      <a
-        data-section="about"
-        (click)="scrollToSection('about')"
-        i18n="@@aboutLink"
-        >About me</a
-      >
-      <a
-        data-section="skills"
-        (click)="scrollToSection('skills')"
-        i18n="@@skillsLink"
-        >Skills</a
-      >
-      <a
-        data-section="portfolio"
-        (click)="scrollToSection('portfolio')"
-        i18n="@@portfolioLink"
-        >Portfolio</a
-      >
-      <!--       <img
+      <a data-section="about" (click)="scrollToSection('about')">{{
+        "HEADER.NAV.ABOUT_ME" | translate
+      }}</a>
+      <a data-section="skills" (click)="scrollToSection('skills')">{{
+        "HEADER.NAV.SKILLS" | translate
+      }}</a>
+      <a (click)="scrollToSection('portfolio')">Portfolio</a>
+
+      <img
+        (click)="switchLanguage('en')"
         class="language-button"
         src="assets/img/icons/english.png"
-        alt="English"
+        alt="{{ 'HEADER.LANGUAGE.ENGLISH_ALT' | translate }}"
       />
       <img
+        (click)="switchLanguage('de')"
         class="language-button"
         src="assets/img/icons/german.png"
-        alt="German"
-      /> -->
+        alt="{{ 'HEADER.LANGUAGE.GERMAN_ALT' | translate }}"
+      />
     </div>
 
     <!-- Burger Menu -->
@@ -43,21 +35,27 @@
         <span class="line line3"></span>
       </div>
       <div class="menu-items">
-        <a (click)="scrollToSection('about')" i18n="@@aboutLink">About me</a>
-        <a (click)="scrollToSection('skills')" i18n="@@skillsLink">Skills</a>
-        <a (click)="scrollToSection('portfolio')" i18n="@@portfolioLink"
-          >Portfolio</a
-        >
-        <!--         <img
-          class="language-button"
-          src="assets/img/icons/english.png"
-          alt="English"
-        />
-        <img
-          class="language-button"
-          src="assets/img/icons/german.png"
-          alt="German"
-        /> -->
+        <a data-section="about" (click)="scrollToSection('about')">{{
+          "HEADER.NAV.ABOUT_ME" | translate
+        }}</a>
+        <a data-section="skills" (click)="scrollToSection('skills')">{{
+          "HEADER.NAV.SKILLS" | translate
+        }}</a>
+        <a (click)="scrollToSection('portfolio')">Portfolio</a>
+        <div class="language-buttons">
+          <img
+            (click)="switchLanguage('en')"
+            class="language-button"
+            src="assets/img/icons/english.png"
+            alt="{{ 'HEADER.LANGUAGE.ENGLISH_ALT' | translate }}"
+          />
+          <img
+            (click)="switchLanguage('de')"
+            class="language-button"
+            src="assets/img/icons/german.png"
+            alt="{{ 'HEADER.LANGUAGE.GERMAN_ALT' | translate }}"
+          />
+        </div>
       </div>
     </nav>
   </header>

@@ -1,28 +1,32 @@
 @import "./../../../styles.scss";
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (max-width: 1200px) {
+/* Very small devices (landscape tablets, 450px and down) */
+@media only screen and (max-width: 450px) {
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* Large devices (landscape tablets bigger, 820px and up) */
+@media only screen and (max-width: 820px) {
   .qick-links {
-    display: none;
+    display: none !important;
   }
 
   .burger-menu {
-    display: block;
+    display: block !important;
   }
 }
 
-/* Very small devices (landscape tablets, 450px and down) */
-@media only screen and (max-width: 450px) {
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
 }

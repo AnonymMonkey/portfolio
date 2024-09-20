@@ -1,0 +1,12 @@
+{
+  "HEADER": {
+    "NAV": {
+      "ABOUT_ME": "Über mich",
+      "SKILLS": "Fähigkeiten"
+    },
+    "LANGUAGE": {
+      "ENGLISH_ALT": "Englisch",
+      "GERMAN_ALT": "Deutsch"
+    }
+  }
+}
