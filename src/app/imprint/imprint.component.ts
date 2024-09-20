@@ -1,4 +1,6 @@
+import { ViewportScroller } from '@angular/common';
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-imprint',
@@ -8,5 +10,18 @@ import { Component } from '@angular/core';
   styleUrl: './imprint.component.scss',
 })
 export class ImprintComponent {
-  email: string = 'eichberger.andino@gmail.com';
+  email: string = 'contact@andino-eichberger.com';
+
+  constructor(
+    private route: ActivatedRoute,
+    private viewportScroller: ViewportScroller
+  ) {}
+
+  ngAfterViewInit() {
+    this.route.fragment.subscribe((fragment) => {
+      if (fragment) {
+        this.viewportScroller.scrollToAnchor(fragment);
+      }
+    });
+  }
 }

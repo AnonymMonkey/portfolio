@@ -185,7 +185,13 @@
 
         a {
           text-decoration: none;
+          text-wrap: nowrap;
           color: $color-white;
+          transition: 75ms;
+
+          &:hover {
+            color: $color-lightblue;
+          }
         }
       }
     }

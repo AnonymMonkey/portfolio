@@ -1,6 +1,7 @@
 @import "./../../../../styles.scss";
 
 form {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -170,6 +171,52 @@ form {
   }
 }
 
+/* Success animation */
+.success-message {
+  position: absolute;
+  bottom: 0;
+  right: -100vw;
+  transform: translateY(15%);
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  color: $color-lightblue;
+  background-color: $color-bg;
+  border: 1px solid $color-darkblue;
+  border-radius: 10px;
+  padding: 15px 25px;
+  animation: fadeInOut 4s ease-in-out;
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+    right: 0;
+    border-color: $color-darkblue;
+  }
+  50% {
+    opacity: 1;
+    right: 0;
+    border-color: $color-contact-done;
+  }
+  80% {
+    opacity: 1;
+    right: 0;
+    border-color: $color-contact-done;
+  }
+  100% {
+    right: 200vw;
+  }
+}
+
+/* checkbox */
 .checkbox-wrapper {
   --s-xsmall: 0.625em;
   --s-small: 1.2em;

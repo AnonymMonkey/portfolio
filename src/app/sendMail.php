@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $messageContent = htmlspecialchars($params->message);
 
     // E-Mail senden
-    $recipient = 'eichberger.andino@gmail.com';  // Deine E-Mail-Adresse
+    $recipient = 'contact@andino-eichberger.com';  // Deine E-Mail-Adresse
     $subject = "Kontaktformular: Nachricht von $name <$email>";
     $message = "Name: $name<br>Email: $email<br>Nachricht:<br><br>$messageContent";
 

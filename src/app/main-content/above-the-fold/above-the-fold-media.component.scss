@@ -1,3 +1,9 @@
+@media only screen and (min-width: 3840px) and (min-height: 2160px) {
+  .slide {
+    height: 50vh !important;
+  }
+}
+
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {
   .atf-right {

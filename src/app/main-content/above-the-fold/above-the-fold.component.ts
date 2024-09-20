@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
   ],
 })
 export class AboveTheFoldComponent {
-  email: string = 'eichberger.andino@gmail.com';
+  email: string = 'contact@andino-eichberger.com';
 
   constructor(
     private router: Router,
