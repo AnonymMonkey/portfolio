@@ -1,0 +1,244 @@
+<div class="privacy">
+  <div>
+    <h1>{{ "PRIVACY.TITLE" | translate }}</h1>
+    <p>{{ "PRIVACY.LAST_UPDATED" | translate }}</p>
+  </div>
+
+  <section>
+    <h2>{{ "PRIVACY.TABLE_OF_CONTENTS" | translate }}</h2>
+    <ul class="privacy-index">
+      <li>
+        <a
+          class="privacy-index-link"
+          (click)="scrollToSection('responsible-party')"
+          >{{ "PRIVACY.RESPONSIBLE_PARTY" | translate }}</a
+        >
+      </li>
+      <li>
+        <a class="privacy-index-link" (click)="scrollToSection('overview')">{{
+          "PRIVACY.OVERVIEW" | translate
+        }}</a>
+      </li>
+      <li>
+        <a
+          class="privacy-index-link"
+          (click)="scrollToSection('legal-basis')"
+          >{{ "PRIVACY.LEGAL_BASIS" | translate }}</a
+        >
+      </li>
+      <li>
+        <a class="privacy-index-link" (click)="scrollToSection('security')">{{
+          "PRIVACY.SECURITY_MEASURES" | translate
+        }}</a>
+      </li>
+      <li>
+        <a
+          class="privacy-index-link"
+          (click)="scrollToSection('data-transfer')"
+          >{{ "PRIVACY.DATA_TRANSFER" | translate }}</a
+        >
+      </li>
+      <li>
+        <a
+          class="privacy-index-link"
+          (click)="scrollToSection('international')"
+          >{{ "PRIVACY.INTERNATIONAL_TRANSFERS" | translate }}</a
+        >
+      </li>
+      <li>
+        <a class="privacy-index-link" (click)="scrollToSection('retention')">{{
+          "PRIVACY.DATA_RETENTION" | translate
+        }}</a>
+      </li>
+      <li>
+        <a class="privacy-index-link" (click)="scrollToSection('rights')">{{
+          "PRIVACY.DATA_SUBJECTS_RIGHTS" | translate
+        }}</a>
+      </li>
+      <li>
+        <a class="privacy-index-link" (click)="scrollToSection('hosting')">{{
+          "PRIVACY.ONLINE_SERVICES_HOST" | translate
+        }}</a>
+      </li>
+      <li>
+        <a
+          class="privacy-index-link"
+          (click)="scrollToSection('contact-management')"
+          >{{ "PRIVACY.CONTACT_MANAGEMENT" | translate }}</a
+        >
+      </li>
+      <li>
+        <a
+          class="privacy-index-link"
+          (click)="scrollToSection('social-media')"
+          >{{ "PRIVACY.SOCIAL_MEDIA" | translate }}</a
+        >
+      </li>
+    </ul>
+  </section>
+
+  <div class="p-cutline-x"></div>
+
+  <section id="responsible-party">
+    <h2>{{ "PRIVACY.RESPONSIBLE_PARTY_TITLE" | translate }}</h2>
+    <div>
+      <div class="personalitys">
+        <p>{{ "IMPRINT.ADDRESS.NAME" | translate }}</p>
+        <p>{{ "IMPRINT.ADDRESS.STREET" | translate }}</p>
+        <p>{{ "IMPRINT.ADDRESS.CITY" | translate }}</p>
+      </div>
+      <div class="p-contact">
+        <h2>{{ "IMPRINT.CONTACT.TITLE" | translate }}</h2>
+        <div>
+          <h3>{{ "IMPRINT.CONTACT.PHONE" | translate }}</h3>
+          <p>0176-62402887</p>
+        </div>
+        <div>
+          <h3>{{ "IMPRINT.CONTACT.EMAIL" | translate }}</h3>
+          <a href="mailto:eichberger.andino@gmail.com">{{ email }}</a>
+        </div>
+        <div>
+          <h3>{{ "PRIVACY.IMPRINT_TITLE" | translate }}</h3>
+          <a href="https://andino-eichberger.com/imprint" target="_blank">{{
+            "PRIVACY.IMPRINT_LINK" | translate
+          }}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="p-cutline-x"></div>
+
+  <div class="p-main-sections">
+    <section id="overview">
+      <div class="h3-cutline-bundle">
+        <div class="i-cutline-x-v2"></div>
+        <h2>{{ "PRIVACY.OVERVIEW_TITLE" | translate }}</h2>
+      </div>
+      <p>{{ "PRIVACY.OVERVIEW_DESCRIPTION" | translate }}</p>
+      <div>
+        <h3>{{ "PRIVACY.DATA_TYPES" | translate }}</h3>
+        <ul>
+          <li>{{ "PRIVACY.PERSONAL_DATA" | translate }}</li>
+          <li>{{ "PRIVACY.CONTACT_DATA" | translate }}</li>
+          <li>{{ "PRIVACY.CONTENT_DATA" | translate }}</li>
+          <li>{{ "PRIVACY.USAGE_DATA" | translate }}</li>
+          <li>{{ "PRIVACY.META_DATA" | translate }}</li>
+          <li>{{ "PRIVACY.LOG_DATA" | translate }}</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>{{ "PRIVACY.DATA_SUBJECTS" | translate }}</h3>
+        <ul>
+          <li>{{ "PRIVACY.COMMUNICATION_PARTNERS" | translate }}</li>
+          <li>{{ "PRIVACY.USERS" | translate }}</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>{{ "PRIVACY.PROCESSING_PURPOSES" | translate }}</h3>
+        <ul>
+          <li>{{ "PRIVACY.COMMUNICATION" | translate }}</li>
+          <li>{{ "PRIVACY.ORGANIZATIONAL_PROCEDURES" | translate }}</li>
+          <li>{{ "PRIVACY.FEEDBACK" | translate }}</li>
+          <li>{{ "PRIVACY.ONLINE_SERVICES" | translate }}</li>
+          <li>{{ "PRIVACY.IT_INFRASTRUCTURE" | translate }}</li>
+          <li>{{ "PRIVACY.PUBLIC_RELATIONS" | translate }}</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="legal-basis">
+      <div class="h3-cutline-bundle">
+        <div class="i-cutline-x-v2"></div>
+        <h2>{{ "PRIVACY.LEGAL_BASIS_TITLE" | translate }}</h2>
+      </div>
+      <p>{{ "PRIVACY.LEGAL_BASIS_DESCRIPTION" | translate }}</p>
+      <ul>
+        <li>{{ "PRIVACY.CONTRACT_FULFILLMENT" | translate }}</li>
+        <li>{{ "PRIVACY.LEGITIMATE_INTERESTS" | translate }}</li>
+      </ul>
+    </section>
+
+    <section id="security">
+      <div class="h3-cutline-bundle">
+        <div class="i-cutline-x-v2"></div>
+        <h2>{{ "PRIVACY.SECURITY_TITLE" | translate }}</h2>
+      </div>
+      <p>{{ "PRIVACY.SECURITY_DESCRIPTION" | translate }}</p>
+    </section>
+
+    <section id="data-transfer">
+      <div class="h3-cutline-bundle">
+        <div class="i-cutline-x-v2"></div>
+        <h2>{{ "PRIVACY.DATA_TRANSFER_TITLE" | translate }}</h2>
+      </div>
+      <p>{{ "PRIVACY.DATA_TRANSFER_DESCRIPTION" | translate }}</p>
+    </section>
+
+    <section id="international">
+      <div class="h3-cutline-bundle">
+        <div class="i-cutline-x-v2"></div>
+        <h2>{{ "PRIVACY.INTERNATIONAL_TRANSFERS_TITLE" | translate }}</h2>
+      </div>
+      <p>{{ "PRIVACY.INTERNATIONAL_TRANSFERS_DESCRIPTION" | translate }}</p>
+    </section>
+
+    <section id="retention">
+      <div class="h3-cutline-bundle">
+        <div class="i-cutline-x-v2"></div>
+        <h2>{{ "PRIVACY.RETENTION_TITLE" | translate }}</h2>
+      </div>
+      <p>{{ "PRIVACY.RETENTION_DESCRIPTION" | translate }}</p>
+    </section>
+
+    <section id="rights">
+      <div class="h3-cutline-bundle">
+        <div class="i-cutline-x-v2"></div>
+        <h2>{{ "PRIVACY.RIGHTS_TITLE" | translate }}</h2>
+      </div>
+      <ul>
+        <li>{{ "PRIVACY.RIGHT_TO_OBJECT" | translate }}</li>
+        <li>{{ "PRIVACY.RIGHT_TO_WITHDRAW_CONSENT" | translate }}</li>
+        <li>{{ "PRIVACY.RIGHT_TO_ACCESS" | translate }}</li>
+        <li>{{ "PRIVACY.RIGHT_TO_RECTIFICATION" | translate }}</li>
+        <li>{{ "PRIVACY.RIGHT_TO_ERASURE" | translate }}</li>
+        <li>{{ "PRIVACY.RIGHT_TO_DATA_PORTABILITY" | translate }}</li>
+      </ul>
+    </section>
+
+    <section id="hosting">
+      <div class="h3-cutline-bundle">
+        <div class="i-cutline-x-v2"></div>
+        <h2>{{ "PRIVACY.HOSTING_TITLE" | translate }}</h2>
+      </div>
+      <p>{{ "PRIVACY.HOSTING_DESCRIPTION" | translate }}</p>
+    </section>
+
+    <section id="contact-management">
+      <div class="h3-cutline-bundle">
+        <div class="i-cutline-x-v2"></div>
+        <h2>{{ "PRIVACY.CONTACT_MANAGEMENT_TITLE" | translate }}</h2>
+      </div>
+      <p>{{ "PRIVACY.CONTACT_MANAGEMENT_DESCRIPTION" | translate }}</p>
+    </section>
+
+    <section id="social-media">
+      <div class="h3-cutline-bundle">
+        <div class="i-cutline-x-v2"></div>
+        <h2>{{ "PRIVACY.SOCIAL_MEDIA_TITLE" | translate }}</h2>
+      </div>
+      <p>{{ "PRIVACY.SOCIAL_MEDIA_DESCRIPTION" | translate }}</p>
+    </section>
+  </div>
+
+  <p class="privacy-seal">
+    <a
+      href="https://datenschutz-generator.de/"
+      target="_blank"
+      rel="noopener noreferrer"
+      >{{ "PRIVACY.GENERATED_BY" | translate }}</a
+    >
+  </p>
+</div>
