@@ -4,14 +4,14 @@
   <div class="language-buttons">
     <img
       *ngIf="isEnglish()"
-      (click)="switchLanguage('en')"
+      (click)="switchLanguage('de')"
       class="language-button"
       src="assets/img/icons/english.png"
       alt="{{ 'HEADER.LANGUAGE.ENGLISH_ALT' | translate }}"
     />
     <img
       *ngIf="isGerman()"
-      (click)="switchLanguage('de')"
+      (click)="switchLanguage('en')"
       class="language-button"
       src="assets/img/icons/german.png"
       alt="{{ 'HEADER.LANGUAGE.GERMAN_ALT' | translate }}"

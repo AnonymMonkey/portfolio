@@ -1,6 +1,11 @@
 import { CommonModule, ViewportScroller } from '@angular/common';
 import { Component, HostListener, OnInit, Renderer2 } from '@angular/core';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import {
+  Router,
+  RouterLink,
+  RouterLinkActive,
+  RouterOutlet,
+} from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -23,7 +28,8 @@ export class HeaderComponent implements OnInit {
   constructor(
     private viewportScroller: ViewportScroller,
     private translate: TranslateService,
-    private renderer: Renderer2
+    private renderer: Renderer2,
+    private router: Router
   ) {
     this.translate.setDefaultLang('en');
   }
@@ -40,7 +46,18 @@ export class HeaderComponent implements OnInit {
   }
 
   scrollToSection(sectionId: string): void {
-    this.viewportScroller.scrollToAnchor(sectionId);
+    const currentUrl = this.router.url;
+
+    if (currentUrl !== '/') {
+      this.router.navigate(['/']).then(() => {
+        setTimeout(() => {
+          this.viewportScroller.scrollToAnchor(sectionId);
+        }, 100);
+      });
+    } else {
+      this.viewportScroller.scrollToAnchor(sectionId);
+    }
+
     this.closeBurgerMenu();
   }
 

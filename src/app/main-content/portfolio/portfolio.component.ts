@@ -5,6 +5,7 @@ import {
   ViewChildren,
   Renderer2,
   ElementRef,
+  ChangeDetectorRef,
 } from '@angular/core';
 import { ProjectsComponent } from './projects/projects.component';
 import { CommonModule } from '@angular/common';
@@ -53,6 +54,7 @@ export class PortfolioComponent implements AfterViewInit {
 
   constructor(
     private renderer: Renderer2,
+    private cdr: ChangeDetectorRef,
     private translate: TranslateService
   ) {}
 
@@ -108,5 +110,6 @@ export class PortfolioComponent implements AfterViewInit {
           project.description = translatedDescription;
         });
     });
+    this.cdr.detectChanges();
   }
 }
