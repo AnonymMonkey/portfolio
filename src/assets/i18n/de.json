@@ -8,5 +8,116 @@
       "ENGLISH_ALT": "Englisch",
       "GERMAN_ALT": "Deutsch"
     }
+  },
+  "ABOVE_THE_FOLD": {
+    "JOB_TITLE": "FRONTEND-ENTWICKLER",
+    "CONTACT_LINK": "Lass uns reden!",
+    "SCROLL_DOWN": "Runter scrollen"
+  },
+  "ABOUT_ME": {
+    "TITLE": "Über mich",
+    "INTRO": "Hi, ich bin ein Frontend-Entwickler aus Groß Twülpstedt in der Nähe von Wolfsburg, Deutschland. Ich hatte die Gelegenheit, in einer Vielzahl von Bereichen Erfahrungen zu sammeln und konnte schließlich meinen Traum verwirklichen, als Softwareentwickler zu arbeiten. Als großer Fan der Digitalisierung möchte ich meine Erfahrung als Softwareentwickler nutzen, um die Zukunft in diesem Bereich zu verbessern und voranzubringen. Digitalisierung ist die Zukunft!",
+    "CHARACTER": "Mein Charakter zeichnet sich in erster Linie durch Ruhe, Zuverlässigkeit und den großen Wunsch aus, andere zu unterstützen, wo immer ich kann.",
+    "ATMOSPHERE": "Ich bin ein sehr entspannter und zugleich direkter Typ, mit dem man immer eine angenehme und lustige Arbeitsatmosphäre hat."
+  },
+  "MY_SKILLS": {
+    "HEADLINE": "Meine Fähigkeiten",
+    "DESCRIPTION": "Ich habe meine Frontend-Entwicklungsfähigkeiten erweitert, die es mir ermöglicht haben, verschiedene reale Projekte zu erstellen.",
+    "GET_IN_TOUCH": "Kontakt aufnehmen"
+  },
+  "PORTFOLIO": {
+    "INTRO": "Entdecke hier eine Auswahl meiner Arbeit – Interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+    "PROJECTS": {
+      "JOIN": {
+        "TITLE": "Join",
+        "SKILLS": "Firebase | JavaScript | HTML | CSS",
+        "DESCRIPTION": "Aufgabenmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu."
+      },
+      "EL_POLLO_LOCO": {
+        "TITLE": "El Pollo Loco",
+        "SKILLS": "JavaScript | HTML | CSS",
+        "DESCRIPTION": "Ein einfaches Jump-and-Run-Spiel auf objektorientierter Basis. Hilf Pepe, Münzen und Salsa-Flaschen zu finden, um gegen die Hühner zu kämpfen."
+      },
+      "WORK_IN_PROGRESS": {
+        "TITLE": "In Bearbeitung...",
+        "SKILLS": "In Bearbeitung...",
+        "DESCRIPTION": "In Bearbeitung..."
+      }
+    }
+  },
+  "CONTACT": {
+    "TITLE": "Kontakt",
+    "PROBLEM": "Hast du ein Problem zu lösen?",
+    "DESCRIPTION": "Kontaktiere mich über dieses Formular, ich bin daran interessiert, von dir zu hören, deine Ideen zu erfahren und mit meiner Arbeit zu deinen Projekten beizutragen.",
+    "NEED_DEV": "Brauchst du einen Frontend-Entwickler?",
+    "CONTACT_ME": "Kontaktiere mich!"
+  },
+  "FORM": {
+    "NAME_PLACEHOLDER": "Dein Name",
+    "NAME_REQUIRED": "Dein Name ist erforderlich",
+    "EMAIL_PLACEHOLDER": "Deine E-Mail",
+    "EMAIL_REQUIRED": "Deine E-Mail ist erforderlich",
+    "MESSAGE_PLACEHOLDER": "Deine Nachricht",
+    "MESSAGE_REQUIRED": "Bitte gib eine Nachricht ein.",
+    "MESSAGE_MINLENGTH": "Deine Nachricht muss mindestens {{ requiredLength }} Zeichen lang sein.",
+    "PRIVACY_AGREE": "Ich habe die",
+    "PRIVACY_POLICY": "Datenschutzerklärung",
+    "PRIVACY_TEXT": "gelesen und stimme der Verarbeitung meiner Daten zu.",
+    "SUCCESS_MESSAGE": "Deine Nachricht wurde erfolgreich gesendet!",
+    "SUBMIT": "Nachricht senden :)"
+  },
+  "IMPRINT": {
+    "TITLE": "Impressum",
+    "INFO_TITLE": "Angaben gemäß § 5 TMG",
+    "ADDRESS": {
+      "NAME": "Andino Eichberger",
+      "STREET": "Fliederweg 1A",
+      "CITY": "38464 Klein Twülpstedt / Groß Twülpstedt"
+    },
+    "CONTACT": {
+      "TITLE": "Kontakt:",
+      "PHONE": "Telefon:",
+      "EMAIL": "E-Mail:"
+    },
+    "DISCLAIMER_TITLE": "Haftungsausschluss:",
+    "LIABILITY_CONTENT": {
+      "TITLE": "Haftung für Inhalte",
+      "TEXT": "Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen..."
+    },
+    "COPYRIGHT": {
+      "TITLE": "Urheberrecht",
+      "TEXT": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht..."
+    },
+    "DATA_PROTECTION": {
+      "TITLE": "Datenschutz",
+      "TEXT": "Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst und behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Vorschriften, insbesondere der Datenschutz-Grundverordnung (DSGVO).",
+      "RESPONSIBLE": "1. Verantwortliche Stelle",
+      "RESPONSIBLE_TEXT": "Die verantwortliche Stelle für die Datenverarbeitung finden Sie im Impressum.",
+      "COLLECTION": "2. Erhebung und Verarbeitung personenbezogener Daten",
+      "COLLECTION_TEXT": "Personenbezogene Daten wie Name, E-Mail-Adresse und Nachricht werden über das Kontaktformular ausschließlich zum Zwecke der Beantwortung Ihrer Anfrage erhoben...",
+      "SERVER_LOG": "3. Server-Log-Dateien",
+      "SERVER_LOG_TEXT": "Unser Hosting-Anbieter All-Inkl protokolliert automatisch technische Details wie Ihre IP-Adresse, den Browsertyp und die Uhrzeit des Zugriffs...",
+      "THIRD_PARTY": "4. Dienste von Drittanbietern",
+      "THIRD_PARTY_TEXT": "Wir verwenden keine Tracking- oder Analysedienste...",
+      "RIGHTS": "5. Ihre Rechte",
+      "RIGHTS_TEXT": "Sie haben das Recht auf Auskunft, Berichtigung, Löschung oder Einschränkung der Verarbeitung Ihrer personenbezogenen Daten..."
+    },
+    "LIABILITY_LINKS": {
+      "TITLE": "Haftung für Links",
+      "TEXT": "Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben..."
+    },
+    "GENERATOR_LINK": {
+      "TEXT": "Website Impressum von",
+      "GENERATOR": "impressum-generator.de",
+      "ICONS_ENGLISH": "Englisch Icon erstellt von Sudowoodo - Flaticon",
+      "ICONS_GERMAN": "Deutsch Icon erstellt von Sudowoodo - Flaticon"
+    }
+  },
+  "FOOTER": {
+    "IMPRINT": "Impressum"
+  },
+  "LANDSCAPE_WARNING": {
+    "MESSAGE": "Diese Seite ist nur im Hochformat sichtbar!",
+    "TURN_DEVICE": "Bitte drehen Sie Ihr Gerät."
   }
 }

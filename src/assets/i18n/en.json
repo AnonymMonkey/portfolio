@@ -8,5 +8,116 @@
       "ENGLISH_ALT": "English",
       "GERMAN_ALT": "German"
     }
+  },
+  "ABOVE_THE_FOLD": {
+    "JOB_TITLE": "FRONTEND DEVELOPER",
+    "CONTACT_LINK": "Let’s talk!",
+    "SCROLL_DOWN": "Scroll down"
+  },
+  "ABOUT_ME": {
+    "TITLE": "About me",
+    "INTRO": "Hi, I am a front-end developer based in Groß Twülpstedt near Wolfsburg, Germany. I have had the opportunity to gain experience in a wide variety of areas and was finally able to fulfill my dream of working as a software developer. As a huge fan of digitization, I want to use my experience as a software developer to polish up and improve the future in this area. Digitization is the future!",
+    "CHARACTER": "My character is primarily characterized by calmness, reliability, and the great desire to be able to support others wherever I can.",
+    "ATMOSPHERE": "I am a very relaxed and at the same time direct guy with whom you always have a fun and pleasant working atmosphere."
+  },
+  "MY_SKILLS": {
+    "HEADLINE": "My skills",
+    "DESCRIPTION": "I have grown my frontend development skills that have allowed me to create different real projects.",
+    "GET_IN_TOUCH": "Get in touch"
+  },
+  "PORTFOLIO": {
+    "INTRO": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+    "PROJECTS": {
+      "JOIN": {
+        "TITLE": "Join",
+        "SKILLS": "Firebase | JavaScript | HTML | CSS",
+        "DESCRIPTION": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
+      },
+      "EL_POLLO_LOCO": {
+        "TITLE": "El Pollo Loco",
+        "SKILLS": "JavaScript | HTML | CSS",
+        "DESCRIPTION": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and Salsa bottles to fight against the chickens."
+      },
+      "WORK_IN_PROGRESS": {
+        "TITLE": "Work in progress...",
+        "SKILLS": "Work in progress...",
+        "DESCRIPTION": "Work in progress..."
+      }
+    }
+  },
+  "CONTACT": {
+    "TITLE": "Contact",
+    "PROBLEM": "Got a problem to solve?",
+    "DESCRIPTION": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+    "NEED_DEV": "Need a Frontend developer?",
+    "CONTACT_ME": "Contact me!"
+  },
+  "FORM": {
+    "NAME_PLACEHOLDER": "Your name",
+    "NAME_REQUIRED": "Your name is required",
+    "EMAIL_PLACEHOLDER": "Your email",
+    "EMAIL_REQUIRED": "Your email is required",
+    "MESSAGE_PLACEHOLDER": "Your message",
+    "MESSAGE_REQUIRED": "Please enter a message.",
+    "MESSAGE_MINLENGTH": "Your message must be at least {{ requiredLength }} characters long.",
+    "PRIVACY_AGREE": "I've read the",
+    "PRIVACY_POLICY": "privacy policy",
+    "PRIVACY_TEXT": "and agree to the processing of my data as outlined.",
+    "SUCCESS_MESSAGE": "Your message has been successfully sent!",
+    "SUBMIT": "Send message :)"
+  },
+  "IMPRINT": {
+    "TITLE": "Imprint",
+    "INFO_TITLE": "Information according to § 5 DDG",
+    "ADDRESS": {
+      "NAME": "Andino Eichberger",
+      "STREET": "Fliederweg 1A",
+      "CITY": "38464 Klein Twülpstedt / Groß Twülpstedt"
+    },
+    "CONTACT": {
+      "TITLE": "Contact:",
+      "PHONE": "Phone:",
+      "EMAIL": "Email:"
+    },
+    "DISCLAIMER_TITLE": "Disclaimer:",
+    "LIABILITY_CONTENT": {
+      "TITLE": "Liability for content",
+      "TEXT": "The contents of our pages have been created with the utmost care. However, we cannot guarantee the accuracy, completeness, and timeliness of the content..."
+    },
+    "COPYRIGHT": {
+      "TITLE": "Copyright",
+      "TEXT": "The content and works created by the site operators on these pages are subject to German copyright law..."
+    },
+    "DATA_PROTECTION": {
+      "TITLE": "Data protection",
+      "TEXT": "We are committed to protecting your personal data and handling it in compliance with legal regulations, especially the General Data Protection Regulation (GDPR).",
+      "RESPONSIBLE": "1. Responsible party",
+      "RESPONSIBLE_TEXT": "The responsible party for data processing can be found in the Imprint.",
+      "COLLECTION": "2. Collection and processing of personal data",
+      "COLLECTION_TEXT": "Personal data such as name, email address, and message are collected through the contact form solely for the purpose of answering your inquiry...",
+      "SERVER_LOG": "3. Server log files",
+      "SERVER_LOG_TEXT": "Our hosting provider, All-Inkl, automatically logs technical details such as your IP address, browser type, and time of access...",
+      "THIRD_PARTY": "4. Third-party services",
+      "THIRD_PARTY_TEXT": "We do not use tracking or analytics services...",
+      "RIGHTS": "5. Your rights",
+      "RIGHTS_TEXT": "You have the right to access, correct, delete, or restrict the use of your personal data..."
+    },
+    "LIABILITY_LINKS": {
+      "TITLE": "Liability for links",
+      "TEXT": "Our offer contains links to external websites of third parties, over whose content we have no influence..."
+    },
+    "GENERATOR_LINK": {
+      "TEXT": "Website Imprint of",
+      "GENERATOR": "impressum-generator.de",
+      "ICONS_ENGLISH": "English icon created by Sudowoodo - Flaticon",
+      "ICONS_GERMAN": "Germany icon created by Sudowoodo - Flaticon"
+    }
+  },
+  "FOOTER": {
+    "IMPRINT": "Imprint"
+  },
+  "LANDSCAPE_WARNING": {
+    "MESSAGE": "This page is only viewable in portrait mode!",
+    "TURN_DEVICE": "Please turn your device."
   }
 }

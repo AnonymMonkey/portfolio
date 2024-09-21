@@ -12,14 +12,16 @@
   <div class="atf-right">
     <div class="atf-text">
       <div class="rotated-container">
-        <p i18n="@@iAmText">I am</p>
+        <p>I am</p>
       </div>
       <div class="atf-name">
         <p>Andino Eichberger</p>
-        <p i18n="@@jobTitleText">FRONTEND DEVELOPER</p>
+        <p>{{ "ABOVE_THE_FOLD.JOB_TITLE" | translate }}</p>
       </div>
     </div>
-    <a (click)="scrollToSection('contact')" i18n="@@contactLink">Let´s talk!</a>
+    <a (click)="scrollToSection('contact')">{{
+      "ABOVE_THE_FOLD.CONTACT_LINK" | translate
+    }}</a>
   </div>
 
   <!-- info -->
@@ -47,7 +49,7 @@
       </div>
     </div>
     <div class="scroll-down">
-      <p i18n="@@scrollDownText">Scroll down</p>
+      <p>{{ "ABOVE_THE_FOLD.SCROLL_DOWN" | translate }}</p>
       <img
         src="assets/img/icons/icons-sub/arrow-down-line.png"
         alt="arrow-down"

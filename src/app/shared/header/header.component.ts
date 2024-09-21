@@ -1,4 +1,4 @@
-import { ViewportScroller } from '@angular/common';
+import { CommonModule, ViewportScroller } from '@angular/common';
 import { Component, HostListener, OnInit, Renderer2 } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
@@ -6,12 +6,19 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterOutlet, RouterLink, RouterLinkActive, TranslateModule],
+  imports: [
+    RouterOutlet,
+    RouterLink,
+    RouterLinkActive,
+    TranslateModule,
+    CommonModule,
+  ],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss', './header-media.component.scss'],
 })
 export class HeaderComponent implements OnInit {
   private observer: IntersectionObserver | undefined;
+  currentLang: string = 'en';
 
   constructor(
     private viewportScroller: ViewportScroller,
@@ -21,12 +28,15 @@ export class HeaderComponent implements OnInit {
     this.translate.setDefaultLang('en');
   }
 
-  switchLanguage(lang: string) {
-    this.translate.use(lang);
-  }
-
   ngOnInit(): void {
     this.updateActiveSectionOnScroll();
+    this.currentLang =
+      this.translate.currentLang || this.translate.getDefaultLang();
+  }
+
+  switchLanguage(lang: string) {
+    this.translate.use(lang);
+    this.currentLang = lang;
   }
 
   scrollToSection(sectionId: string): void {
@@ -85,5 +95,13 @@ export class HeaderComponent implements OnInit {
         this.renderer.addClass(activeLink, 'active');
       }
     }
+  }
+
+  isEnglish(): boolean {
+    return this.currentLang === 'en';
+  }
+
+  isGerman(): boolean {
+    return this.currentLang === 'de';
   }
 }

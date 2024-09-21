@@ -1,11 +1,12 @@
 import { ViewportScroller } from '@angular/common';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-above-the-fold',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './above-the-fold.component.html',
   styleUrls: [
     './above-the-fold.component.scss',

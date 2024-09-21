@@ -47,14 +47,13 @@
   </div>
   <div class="m-skills-right">
     <div class="m-skills-right-headline">
-      <h2 i18n="@@mySkillsHeadline">My skills</h2>
+      <h2>{{ "MY_SKILLS.HEADLINE" | translate }}</h2>
       <div></div>
     </div>
-    <p i18n="@@skillsDescription">
-      I have grown my frontend developments skills that have allowed me to
-      create different real projects.
-    </p>
-    <a (click)="scrollToSection('contact')" i18n="@@getInTouch">Get in touch</a>
+    <p>{{ "MY_SKILLS.DESCRIPTION" | translate }}</p>
+    <a (click)="scrollToSection('contact')">{{
+      "MY_SKILLS.GET_IN_TOUCH" | translate
+    }}</a>
   </div>
 
   <img

@@ -1,39 +1,52 @@
 <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
   <!-- Name Input -->
   <div class="normal-input">
-    <label for="name" class="visually-hidden" i18n="@@labelName">Name</label>
+    <label for="name" class="visually-hidden">{{
+      "FORM.NAME_PLACEHOLDER" | translate
+    }}</label>
     <div
       class="normal-input-with-img"
-      [ngClass]="{ 'has-error': checkFieldValidity(name) }"
+      [ngClass]="{
+        'has-error': checkFieldValidity(name),
+        'is-valid': name.valid
+      }"
     >
       <input
         #name="ngModel"
         [(ngModel)]="contactData.name"
         name="name"
         id="name"
-        placeholder="Your name"
+        [placeholder]="'FORM.NAME_PLACEHOLDER' | translate"
         autocomplete="off"
+        minlength="3"
         required
-        i18n-placeholder="@@placeholderName"
       />
-      <span *ngIf="checkFieldValidity(name)" i18n="@@nameRequired"
-        >Your name is required</span
-      >
+      <span *ngIf="checkFieldValidity(name)">{{
+        "FORM.NAME_REQUIRED" | translate
+      }}</span>
       <img
         class="input-icon"
-        src="assets/img/icons/icons-sub/warning.svg"
+        [src]="
+          name.valid
+            ? 'assets/img/icons/icons-sub/success.svg'
+            : 'assets/img/icons/icons-sub/warning.svg'
+        "
         alt=""
-        *ngIf="checkFieldValidity(name)"
       />
     </div>
   </div>
 
   <!-- Email Input -->
   <div class="normal-input">
-    <label for="email" class="visually-hidden" i18n="@@labelEmail">Email</label>
+    <label for="email" class="visually-hidden">{{
+      "FORM.EMAIL_PLACEHOLDER" | translate
+    }}</label>
     <div
       class="normal-input-with-img"
-      [ngClass]="{ 'has-error': checkFieldValidity(email) }"
+      [ngClass]="{
+        'has-error': checkFieldValidity(email),
+        'is-valid': email.valid
+      }"
     >
       <input
         #email="ngModel"
@@ -41,58 +54,64 @@
         type="email"
         name="email"
         id="email"
-        placeholder="Your email"
+        [placeholder]="'FORM.EMAIL_PLACEHOLDER' | translate"
         pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
         autocomplete="off"
         required
-        i18n-placeholder="@@placeholderEmail"
       />
-      <span *ngIf="checkFieldValidity(email)" i18n="@@emailRequired"
-        >Your email is required</span
-      >
+      <span *ngIf="checkFieldValidity(email)">{{
+        "FORM.EMAIL_REQUIRED" | translate
+      }}</span>
       <img
         class="input-icon"
-        src="assets/img/icons/icons-sub/warning.svg"
+        [src]="
+          email.valid
+            ? 'assets/img/icons/icons-sub/success.svg'
+            : 'assets/img/icons/icons-sub/warning.svg'
+        "
         alt=""
-        *ngIf="checkFieldValidity(email)"
       />
     </div>
   </div>
 
   <!-- Message Input -->
   <div class="normal-input">
-    <label for="message" class="visually-hidden" i18n="@@labelMessage"
-      >Message</label
-    >
+    <label for="message" class="visually-hidden">{{
+      "FORM.MESSAGE_PLACEHOLDER" | translate
+    }}</label>
     <div
       class="textarea-with-resize normal-input-with-img"
-      [ngClass]="{ 'has-error': checkFieldValidity(message) }"
+      [ngClass]="{
+        'has-error': checkFieldValidity(message),
+        'is-valid': message.valid
+      }"
     >
       <textarea
         #message="ngModel"
         [(ngModel)]="contactData.message"
         name="message"
         id="message"
-        placeholder="Your message"
+        [placeholder]="'FORM.MESSAGE_PLACEHOLDER' | translate"
         autocomplete="off"
         minlength="20"
         required
-        i18n-placeholder="@@placeholderMessage"
       ></textarea>
       <span *ngIf="checkFieldValidity(message) && message.errors?.['required']">
-        Please enter a message.
+        {{ "FORM.MESSAGE_REQUIRED" | translate }}
       </span>
       <span
         *ngIf="checkFieldValidity(message) && message.errors?.['minlength']"
       >
-        Your message must be at least
-        {{ message.errors?.['minlength'].requiredLength }} characters long.
+        {{ 'FORM.MESSAGE_MINLENGTH' | translate:{ requiredLength: message.errors?.['minlength'].requiredLength } }}
       </span>
       <img
         class="input-icon"
-        src="assets/img/icons/icons-sub/warning.svg"
+        [src]="
+          message.valid
+            ? 'assets/img/icons/icons-sub/success.svg'
+            : 'assets/img/icons/icons-sub/warning.svg'
+        "
         alt=""
-        *ngIf="checkFieldValidity(message)"
       />
       <img
         class="textarea-resize"
@@ -127,16 +146,11 @@
           </svg>
         </span>
         <p class="checkbox__textwrapper">
-          <span i18n="@@privacyPolicyAgreement"> I've read the </span>
-          <a
-            [routerLink]="['/imprint']"
-            [fragment]="'dataprotection'"
-            i18n="@@privacyPolicyLink"
-            >privacy policy</a
-          >
-          <span i18n="@@privacyPolicyConsent">
-            and agree to the processing of my data as outlined.
-          </span>
+          {{ "FORM.PRIVACY_AGREE" | translate }}
+          <a [routerLink]="['/imprint']" [fragment]="'dataprotection'">
+            {{ "FORM.PRIVACY_POLICY" | translate }}
+          </a>
+          {{ "FORM.PRIVACY_TEXT" | translate }}
         </p>
       </label>
     </div>
@@ -144,7 +158,7 @@
 
   <!-- Success Animation -->
   <div *ngIf="formSubmitted" class="success-message">
-    <p>Your message has been successfully sent!</p>
+    <p>{{ "FORM.SUCCESS_MESSAGE" | translate }}</p>
     <div class="animation-container">
       <img src="assets/img/icons/icons-sub/success.svg" alt="Success Icon" />
     </div>
@@ -153,8 +167,7 @@
   <button
     [ngClass]="{ 'button--active': contactForm.valid && contactForm.dirty }"
     [disabled]="!contactForm.valid"
-    i18n="@@sendMessageButton"
   >
-    Send message :)
+    {{ "FORM.SUBMIT" | translate }}
   </button>
 </form>

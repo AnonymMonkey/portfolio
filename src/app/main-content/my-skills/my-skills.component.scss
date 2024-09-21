@@ -9,6 +9,8 @@
 
   display: flex;
   justify-content: space-between;
+
+  gap: 40px;
 }
 
 .m-skills-left {
@@ -90,7 +92,6 @@
   }
 
   a {
-    width: 200px;
     height: 58px;
     padding: 15px 30px 15px 30px;
     gap: 10px;
@@ -106,6 +107,7 @@
 
     text-decoration: none;
     text-align: center;
+    text-wrap: nowrap;
 
     transition: 100ms;
 

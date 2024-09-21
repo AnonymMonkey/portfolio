@@ -44,10 +44,6 @@
           width: unset;
         }
 
-        a {
-          display: none;
-        }
-
         .atf-info-left-icons {
           justify-content: center;
           width: 100%;
@@ -73,6 +69,12 @@
   .avatar-with-bg {
     width: 100% !important;
   }
+
+  .atf-info-left {
+    a:last-child {
+      display: none;
+    }
+  }
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -95,6 +97,19 @@
       position: relative;
       bottom: -50px;
       transform: scale(2);
+    }
+  }
+}
+
+/* Very small devices (landscape tablets, 320px and down) */
+@media only screen and (max-width: 320px) {
+  .atf-right {
+    transform: scale(0.3) !important;
+
+    a {
+      position: relative;
+      bottom: -50px;
+      transform: scale(2.6);
     }
   }
 }

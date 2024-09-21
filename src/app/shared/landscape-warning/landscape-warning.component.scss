@@ -21,3 +21,24 @@
   -moz-box-shadow: inset 0px 0px 8px 2px $color-lightblue;
   box-shadow: inset 0px 0px 8px 2px $color-lightblue;
 }
+
+.language-buttons {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+
+  display: flex;
+  gap: 25px;
+
+  .language-button {
+    height: 16vh;
+
+    transition: 75ms;
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 0px 6px 4px $color-lightblue;
+      border-radius: 12px;
+    }
+  }
+}

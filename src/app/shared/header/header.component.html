@@ -13,12 +13,14 @@
       <a (click)="scrollToSection('portfolio')">Portfolio</a>
 
       <img
+        *ngIf="isEnglish()"
         (click)="switchLanguage('en')"
         class="language-button"
         src="assets/img/icons/english.png"
         alt="{{ 'HEADER.LANGUAGE.ENGLISH_ALT' | translate }}"
       />
       <img
+        *ngIf="isGerman()"
         (click)="switchLanguage('de')"
         class="language-button"
         src="assets/img/icons/german.png"
@@ -44,12 +46,14 @@
         <a (click)="scrollToSection('portfolio')">Portfolio</a>
         <div class="language-buttons">
           <img
+            *ngIf="isGerman()"
             (click)="switchLanguage('en')"
             class="language-button"
             src="assets/img/icons/english.png"
             alt="{{ 'HEADER.LANGUAGE.ENGLISH_ALT' | translate }}"
           />
           <img
+            *ngIf="isEnglish()"
             (click)="switchLanguage('de')"
             class="language-button"
             src="assets/img/icons/german.png"

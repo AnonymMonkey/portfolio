@@ -1,128 +1,101 @@
 <div class="impressum">
   <section class="i-info">
-    <h1 i18n="@@impressumTitle">Imprint</h1>
-    <h2 i18n="@@sectionSubtitle">Information according to § 5 DDG</h2>
+    <h1>{{ "IMPRINT.TITLE" | translate }}</h1>
+    <h2>{{ "IMPRINT.INFO_TITLE" | translate }}</h2>
     <div>
       <div>
-        <p>Andino Eichberger</p>
-        <p>Fliederweg 1A</p>
-        <p>38464 Klein Twülpstedt / Groß Twülpstedt</p>
+        <p>{{ "IMPRINT.ADDRESS.NAME" | translate }}</p>
+        <p>{{ "IMPRINT.ADDRESS.STREET" | translate }}</p>
+        <p>{{ "IMPRINT.ADDRESS.CITY" | translate }}</p>
       </div>
       <div class="i-contact">
-        <h2 i18n="@@contactTitle">Kontakt:</h2>
+        <h2>{{ "IMPRINT.CONTACT.TITLE" | translate }}</h2>
         <div>
-          <h3 i18n="@@phoneLabel">Telefon:</h3>
+          <h3>{{ "IMPRINT.CONTACT.PHONE" | translate }}</h3>
           <p>0176-62402887</p>
         </div>
         <div>
-          <h3>E-Mail:</h3>
+          <h3>{{ "IMPRINT.CONTACT.EMAIL" | translate }}</h3>
           <a href="mailto:eichberger.andino@gmail.com">{{ email }}</a>
         </div>
       </div>
     </div>
   </section>
+
   <div class="i-cutline-x"></div>
 
-  <h2 class="i-haftungsausschluss" i18n="@@disclaimerTitle">Disclaimer:</h2>
+  <h2 class="i-haftungsausschluss">
+    {{ "IMPRINT.DISCLAIMER_TITLE" | translate }}
+  </h2>
 
   <div class="i-main-sections">
     <section>
       <div>
         <div class="i-cutline-x-v2"></div>
-        <h3 i18n="@@liabilityForContentTitle">Liability for content</h3>
+        <h3>{{ "IMPRINT.LIABILITY_CONTENT.TITLE" | translate }}</h3>
       </div>
-      <p i18n="@@liabilityForContentText">
-        The contents of our pages have been created with the utmost care.
-        However, we cannot guarantee the accuracy, completeness, and timeliness
-        of the content. As service providers, we are responsible for our own
-        content on these pages according to general laws, in accordance with § 7
-        Abs.1 DDG. According to §§ 8 to 10 DDG, we are not obligated to monitor
-        transmitted or stored third-party information or to investigate
-        circumstances that indicate illegal activity. Obligations to remove or
-        block the use of information according to general laws remain
-        unaffected. Liability in this regard is only possible from the time we
-        become aware of a specific legal violation. Upon becoming aware of such
-        legal violations, we will promptly remove these contents.
-      </p>
+      <p>{{ "IMPRINT.LIABILITY_CONTENT.TEXT" | translate }}</p>
     </section>
 
     <section>
       <div>
         <div class="i-cutline-x-v2"></div>
-        <h3 i18n="@@copyrightTitle">Copyright</h3>
+        <h3>{{ "IMPRINT.COPYRIGHT.TITLE" | translate }}</h3>
       </div>
-      <p i18n="@@copyrightText">
-        The content and works created by the site operators on these pages are
-        subject to German copyright law. Reproduction, modification,
-        distribution, and any type of utilization outside the limits of
-        copyright require the written consent of the respective author or
-        creator. Downloads and copies of this page are only permitted for
-        private, non-commercial use. As far as the content on this page is not
-        created by the operator, the copyrights of third parties are respected.
-        In particular, third-party content is marked as such. If you become
-        aware of a copyright infringement, we request that you notify us
-        accordingly. Upon becoming aware of legal violations, we will promptly
-        remove such content.
-      </p>
+      <p>{{ "IMPRINT.COPYRIGHT.TEXT" | translate }}</p>
     </section>
 
     <section id="dataprotection">
       <div>
         <div class="i-cutline-x-v2"></div>
-        <h3 i18n="@@privacyTitle">Data protection</h3>
+        <h3>{{ "IMPRINT.DATA_PROTECTION.TITLE" | translate }}</h3>
       </div>
-      <p i18n="@@privacyText">
-        The use of our website is generally possible without providing personal
-        data. As far as personal data (e.g., name, address, or email addresses)
-        is collected on our pages, this is done, where possible, always on a
-        voluntary basis. This data will not be passed on to third parties
-        without your explicit consent. We point out that data transmission over
-        the internet (e.g., when communicating via email) may have security
-        gaps. Complete protection of data from access by third parties is not
-        possible. The use of contact data published within the scope of the
-        imprint obligation by third parties for sending unsolicited advertising
-        and information materials is hereby expressly contradicted. The site
-        operators expressly reserve the right to take legal action in the case
-        of unsolicited sending of advertising information, such as spam emails.
-      </p>
+      <div class="i-data-sections">
+        <p>{{ "IMPRINT.DATA_PROTECTION.TEXT" | translate }}</p>
+        <div class="i-data-section">
+          <h4>{{ "IMPRINT.DATA_PROTECTION.RESPONSIBLE" | translate }}</h4>
+          <p>{{ "IMPRINT.DATA_PROTECTION.RESPONSIBLE_TEXT" | translate }}</p>
+        </div>
+        <div class="i-data-section">
+          <h4>{{ "IMPRINT.DATA_PROTECTION.COLLECTION" | translate }}</h4>
+          <p>{{ "IMPRINT.DATA_PROTECTION.COLLECTION_TEXT" | translate }}</p>
+        </div>
+        <div class="i-data-section">
+          <h4>{{ "IMPRINT.DATA_PROTECTION.SERVER_LOG" | translate }}</h4>
+          <p>{{ "IMPRINT.DATA_PROTECTION.SERVER_LOG_TEXT" | translate }}</p>
+        </div>
+        <div class="i-data-section">
+          <h4>{{ "IMPRINT.DATA_PROTECTION.THIRD_PARTY" | translate }}</h4>
+          <p>{{ "IMPRINT.DATA_PROTECTION.THIRD_PARTY_TEXT" | translate }}</p>
+        </div>
+        <div class="i-data-section">
+          <h4>{{ "IMPRINT.DATA_PROTECTION.RIGHTS" | translate }}</h4>
+          <p>{{ "IMPRINT.DATA_PROTECTION.RIGHTS_TEXT" | translate }}</p>
+        </div>
+      </div>
     </section>
 
     <section>
       <div>
         <div class="i-cutline-x-v2"></div>
-        <h3 i18n="@@liabilityForLinksTitle">Liability for links</h3>
+        <h3>{{ "IMPRINT.LIABILITY_LINKS.TITLE" | translate }}</h3>
       </div>
-      <p i18n="@@liabilityForLinksText">
-        Our offer contains links to external websites of third parties, over
-        whose content we have no influence. Therefore, we cannot accept any
-        responsibility for these external contents. The respective provider or
-        operator of the linked pages is always responsible for the content of
-        the linked pages. The linked pages were checked for possible legal
-        violations at the time of linking. Illegal content was not recognizable
-        at the time of linking. However, a permanent content control of the
-        linked pages is not reasonable without concrete evidence of a legal
-        violation. Upon becoming aware of legal violations, we will promptly
-        remove such links.
-      </p>
+      <p>{{ "IMPRINT.LIABILITY_LINKS.TEXT" | translate }}</p>
     </section>
   </div>
 
   <div class="i-generator-link">
-    <p i18n="@@impressumGenerator">
-      Website Imprint of
-      <a href="https://www.impressum-generator.de">impressum-generator.de</a>
+    <p>
+      {{ "IMPRINT.GENERATOR_LINK.TEXT" | translate }}
+      <a href="https://www.impressum-generator.de">{{
+        "IMPRINT.GENERATOR_LINK.GENERATOR" | translate
+      }}</a>
     </p>
-    <a
-      href="https://www.flaticon.com/free-icons/english"
-      title="english icons"
-      i18n-title="@@englishIconsTitle"
-      >English icons created by Sudowoodo - Flaticon</a
-    >
-    <a
-      href="https://www.flaticon.com/free-icons/germany"
-      title="germany icons"
-      i18n-title="@@germanyIconsTitle"
-      >Germany icons created by Sudowoodo - Flaticon</a
-    >
+    <a href="https://www.flaticon.com/free-icons/english" title="english icons">
+      {{ "IMPRINT.GENERATOR_LINK.ICONS_ENGLISH" | translate }}
+    </a>
+    <a href="https://www.flaticon.com/free-icons/germany" title="germany icons">
+      {{ "IMPRINT.GENERATOR_LINK.ICONS_GERMAN" | translate }}
+    </a>
   </div>
 </div>

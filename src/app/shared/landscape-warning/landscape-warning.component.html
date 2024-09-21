@@ -1,6 +1,20 @@
 <div class="landscape-warning" *ngIf="showLandscapeWarning">
-  <p i18n="@@landscapeWarningTitle">
-    This page is only viewable in portrait mode!
-  </p>
-  <p i18n="@@landscapeWarningInstruction">Please turn your device.</p>
+  <p>{{ "LANDSCAPE_WARNING.MESSAGE" | translate }}</p>
+  <p>{{ "LANDSCAPE_WARNING.TURN_DEVICE" | translate }}</p>
+  <div class="language-buttons">
+    <img
+      *ngIf="isEnglish()"
+      (click)="switchLanguage('en')"
+      class="language-button"
+      src="assets/img/icons/english.png"
+      alt="{{ 'HEADER.LANGUAGE.ENGLISH_ALT' | translate }}"
+    />
+    <img
+      *ngIf="isGerman()"
+      (click)="switchLanguage('de')"
+      class="language-button"
+      src="assets/img/icons/german.png"
+      alt="{{ 'HEADER.LANGUAGE.GERMAN_ALT' | translate }}"
+    />
+  </div>
 </div>

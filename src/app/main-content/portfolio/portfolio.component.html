@@ -2,24 +2,21 @@
   <div class="p-start">
     <div class="p-headline">
       <div class="p-headline-cutline-small"></div>
-      <h2 i18n="@@portfolioHeadline">Portfolio</h2>
+      <h2>Portfolio</h2>
       <div class="p-headline-cutline-big"></div>
     </div>
-    <p i18n="@@portfolioDescription">
-      Explore a selection of my work here - Interact with projects to see my
-      skills in action.
-    </p>
+    <p>{{ "PORTFOLIO.INTRO" | translate }}</p>
   </div>
 
   <div class="p-projects">
     <app-projects
-      *ngFor="let item of projectsData.title; let i = index"
-      [title]="projectsData.title[i]"
-      [skills]="projectsData.skills[i]"
-      [description]="projectsData.description[i]"
-      [image]="projectsData.images[i]"
-      [linksProjects]="projectsData.linksProjects[i]"
-      [linksGithub]="projectsData.linksGithub[i]"
+      *ngFor="let project of projectsData"
+      [title]="project.title"
+      [skills]="project.skills"
+      [description]="project.description"
+      [image]="project.image"
+      [linksProjects]="project.linksProjects"
+      [linksGithub]="project.linksGithub"
     >
     </app-projects>
   </div>

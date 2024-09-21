@@ -73,6 +73,17 @@
   position: absolute;
   bottom: 0;
   right: var(--space);
+  color: $color-white;
+  transition: 75ms;
+
+  svg {
+    transition: color 75ms ease-in-out;
+  }
+
+  &:hover {
+    color: $color-lightblue;
+    transform: scale(1.1);
+  }
 }
 
 .bg-shape-end {

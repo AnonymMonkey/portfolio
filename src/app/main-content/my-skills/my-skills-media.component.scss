@@ -26,12 +26,19 @@
 @media only screen and (max-width: 768px) {
 }
 
+/* Medium devices (landscape tablets, 678px and up) */
+@media only screen and (max-width: 678px) {
+  h2 {
+    font-size: 78px;
+  }
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .m-skills-right {
     .m-skills-right-headline {
       h2 {
-        font-size: 45px !important;
+        font-size: 45px;
       }
     }
 
@@ -73,4 +80,13 @@
 
 /* Very small devices (landscape tablets, 450px and down) */
 @media only screen and (max-width: 450px) {
+}
+
+/* Very very small devices (landscape tablets, 345px and down) */
+@media only screen and (max-width: 345px) {
+  .m-skills-right-headline {
+    h2 {
+      font-size: 35px !important;
+    }
+  }
 }

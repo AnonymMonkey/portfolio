@@ -5,6 +5,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { LandscapeWarningComponent } from './shared/landscape-warning/landscape-warning.component';
+import { HeaderComponent } from './shared/header/header.component';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,7 @@ import { LandscapeWarningComponent } from './shared/landscape-warning/landscape-
     RouterOutlet,
     RouterLink,
     RouterLinkActive,
+    HeaderComponent,
     FooterComponent,
     LandscapeWarningComponent,
   ],

@@ -4,9 +4,9 @@
       <a class="home-link" href="#">
         <img src="assets/img/me/logo.png" alt="" />
       </a>
-      <a [routerLink]="['/imprint']" i18n="@@imprintLink">Imprint</a>
+      <a [routerLink]="['/imprint']">{{ "FOOTER.IMPRINT" | translate }}</a>
     </div>
-    <p>© Andino Eichberger 2024</p>
+    <p class="footer-creator">© Andino Eichberger 2024</p>
     <div class="footer-right">
       <a
         href="https://github.com/AnonymMonkey"

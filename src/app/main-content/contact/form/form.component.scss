@@ -81,6 +81,22 @@ form {
         }
       }
 
+      &.is-valid {
+        input,
+        textarea {
+          border-color: $color-contact-done;
+        }
+
+        .input-icon {
+          display: flex;
+        }
+
+        span {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+
       input {
         height: 50px;
       }

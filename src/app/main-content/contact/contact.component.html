@@ -1,24 +1,41 @@
 <div class="contact">
   <div class="contact-headline">
     <div></div>
-    <h2 i18n="@@contactHeadline">Contact</h2>
+    <h2>{{ "CONTACT.TITLE" | translate }}</h2>
   </div>
   <div class="contact-content">
     <div class="contact-description">
-      <p i18n="@@contactProblem">Got a problem to solve?</p>
-      <p i18n="@@contactMessage">
-        Contact me through this form, I am interested in hearing from you,
-        knowing your ideas and contributing to your projects with my work.
-      </p>
-      <p i18n="@@contactDeveloper">
-        Need a Frontend developer?
-        <b>Contact me!</b>
+      <p>{{ "CONTACT.PROBLEM" | translate }}</p>
+      <p>{{ "CONTACT.DESCRIPTION" | translate }}</p>
+      <p>
+        {{ "CONTACT.NEED_DEV" | translate }}
+        <b>{{ "CONTACT.CONTACT_ME" | translate }}</b>
       </p>
     </div>
     <app-form></app-form>
   </div>
   <a class="arrow-up" href="#">
-    <img src="assets/img/icons/icons-sub/arrow-up.png" alt="Back to top" />
+    <svg
+      width="39"
+      height="39"
+      viewBox="0 0 39 39"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        x="1"
+        y="1"
+        width="37"
+        height="37"
+        rx="18.5"
+        stroke="currentColor"
+        stroke-width="2"
+      />
+      <path
+        d="M18 15.828L13.343 20.485C12.9525 20.8755 12.3194 20.8755 11.929 20.485C11.5385 20.0945 11.5385 19.4615 11.929 19.071L18.2928 12.7071C18.6834 12.3166 19.3165 12.3166 19.7071 12.7071L26.071 19.071C26.4614 19.4615 26.4614 20.0945 26.071 20.485C25.6805 20.8755 25.0474 20.8755 24.657 20.485L20 15.828L20 27C20 27.5523 19.5522 28 19 28C18.4477 28 18 27.5523 18 27L18 15.828Z"
+        fill="currentColor"
+      />
+    </svg>
   </a>
 
   <img class="bg-shape-end" src="assets/img/build-objects/vector4.png" alt="" />
