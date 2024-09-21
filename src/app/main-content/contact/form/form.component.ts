@@ -22,7 +22,7 @@ export class FormComponent {
     privacy: false,
   };
 
-  mailTest = true;
+  mailTest = false;
   formSubmitted = false;
 
   post = {
