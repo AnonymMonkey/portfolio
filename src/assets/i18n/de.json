@@ -38,6 +38,11 @@
         "SKILLS": "JavaScript | HTML | CSS",
         "DESCRIPTION": "Ein einfaches Jump-and-Run-Spiel auf objektorientierter Basis. Hilf Pepe, Münzen und Salsa-Flaschen zu finden, um gegen die Hühner zu kämpfen."
       },
+      "DABUBBLE": {
+        "TITLE": "DABubble",
+        "SKILLS": "Angular | Firebase | TypeScript | HTML | SCSS",
+        "DESCRIPTION": "Ein schlanker Slack-/Discord-Klon mit Echtzeitkommunikation, Kanälen und Firebase-Integration für sichere Authentifizierung und zuverlässige Synchronisation. Ideal für Teams und Communitys."
+      },
       "WORK_IN_PROGRESS": {
         "TITLE": "In Bearbeitung...",
         "SKILLS": "In Bearbeitung...",

@@ -25,7 +25,7 @@ export class PortfolioComponent implements AfterViewInit {
   projectsData = [
     {
       key: 'JOIN',
-      title: '', // Leer statt null
+      title: '',
       skills: '',
       description: '',
       image: 'assets/img/projects/join-laptop.png',
@@ -42,11 +42,20 @@ export class PortfolioComponent implements AfterViewInit {
       linksGithub: 'https://github.com/AnonymMonkey/el-pollo-loco',
     },
     {
+      key: 'DABUBBLE',
+      title: '',
+      skills: '',
+      description: '',
+      image: 'assets/img/projects/dabubble.png',
+      linksProjects: 'https://dabubble.andino-eichberger.com/',
+      linksGithub: 'https://github.com/AnonymMonkey/DABubble',
+    },
+    {
       key: 'WORK_IN_PROGRESS',
       title: '',
       skills: '',
       description: '',
-      image: 'assets/img/projects/join-laptop.png',
+      image: 'assets/img/projects/work-in-progress.png',
       linksProjects: '#',
       linksGithub: '#',
     },
